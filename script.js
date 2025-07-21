@@ -120,7 +120,7 @@ function processScenario(scenario) {
                 const thisLooper = audioLoopers[action.audio];
 
                 if (thisLooper.isPlaying) {
-                    btn.disabled = true;
+                    btn.remove();
                     step++;
                     doStep();
                     return;
@@ -140,7 +140,7 @@ function processScenario(scenario) {
                 } else {
                     thisLooper.play();
                 }
-                btn.disabled = true;
+                btn.remove();
                 step++;
                 doStep();
             };
@@ -165,7 +165,7 @@ function processScenario(scenario) {
                     const thisLooper = audioLoopers[option.audio];
 
                     if (thisLooper.isPlaying) {
-                        btns.forEach(b => b.disabled = true);
+                        container.remove();
                         step++;
                         doStep();
                         return;
@@ -186,7 +186,7 @@ function processScenario(scenario) {
                     } else {
                         thisLooper.play();
                     }
-                    btns.forEach(b => b.disabled = true);
+                    container.remove();
                     step++;
                     doStep();
                 };
@@ -215,7 +215,7 @@ function processScenario(scenario) {
                 if (audioLoopers[action.audio]) {
                     audioLoopers[action.audio].scheduleStopAfterLoop();
                 }
-                btn.disabled = true;
+                btn.remove();
                 step++;
                 doStep();
             };

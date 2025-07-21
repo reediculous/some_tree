@@ -109,6 +109,7 @@ function processScenario(scenario) {
 
         if (action.action === "play") {
             const btn = document.createElement('button');
+            btn.className = 'play-btn';
             btn.textContent = `play ${action.audio}`;
             btn.onclick = async () => {
                 if (scenarioStartTime === null) scenarioStartTime = performance.now();
@@ -120,7 +121,7 @@ function processScenario(scenario) {
                 const thisLooper = audioLoopers[action.audio];
 
                 if (thisLooper.isPlaying) {
-                    btn.disabled = true;
+                    btn.remove();
                     step++;
                     doStep();
                     return;
@@ -140,7 +141,7 @@ function processScenario(scenario) {
                 } else {
                     thisLooper.play();
                 }
-                btn.disabled = true;
+                btn.remove();
                 step++;
                 doStep();
             };
@@ -155,6 +156,7 @@ function processScenario(scenario) {
             const btns = [];
             for (const option of action.options) {
                 const btn = document.createElement('button');
+                btn.className = 'choose-btn';
                 btn.textContent = `choose ${option.audio}`;
                 btn.onclick = async () => {
                     if (scenarioStartTime === null) scenarioStartTime = performance.now();
@@ -165,7 +167,7 @@ function processScenario(scenario) {
                     const thisLooper = audioLoopers[option.audio];
 
                     if (thisLooper.isPlaying) {
-                        btns.forEach(b => b.disabled = true);
+                        container.remove();
                         step++;
                         doStep();
                         return;
@@ -186,7 +188,7 @@ function processScenario(scenario) {
                     } else {
                         thisLooper.play();
                     }
-                    btns.forEach(b => b.disabled = true);
+                    container.remove();
                     step++;
                     doStep();
                 };
@@ -210,12 +212,13 @@ function processScenario(scenario) {
             }, waitFor);
         } else if (action.action === "stop") {
             const btn = document.createElement('button');
+            btn.className = 'stop-btn';
             btn.textContent = `stop ${action.audio}`;
             btn.onclick = () => {
                 if (audioLoopers[action.audio]) {
                     audioLoopers[action.audio].scheduleStopAfterLoop();
                 }
-                btn.disabled = true;
+                btn.remove();
                 step++;
                 doStep();
             };

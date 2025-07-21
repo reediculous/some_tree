@@ -109,6 +109,7 @@ function processScenario(scenario) {
 
         if (action.action === "play") {
             const btn = document.createElement('button');
+            btn.className = 'play-btn';
             btn.textContent = `play ${action.audio}`;
             btn.onclick = async () => {
                 if (scenarioStartTime === null) scenarioStartTime = performance.now();
@@ -155,6 +156,7 @@ function processScenario(scenario) {
             const btns = [];
             for (const option of action.options) {
                 const btn = document.createElement('button');
+                btn.className = 'choose-btn';
                 btn.textContent = `choose ${option.audio}`;
                 btn.onclick = async () => {
                     if (scenarioStartTime === null) scenarioStartTime = performance.now();
@@ -210,6 +212,7 @@ function processScenario(scenario) {
             }, waitFor);
         } else if (action.action === "stop") {
             const btn = document.createElement('button');
+            btn.className = 'stop-btn';
             btn.textContent = `stop ${action.audio}`;
             btn.onclick = () => {
                 if (audioLoopers[action.audio]) {

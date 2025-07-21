@@ -64,7 +64,7 @@ button {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url('/some_tree/icons/play.svg');
+    background-image: url('/icons/play.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -94,7 +94,7 @@ button {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url('/some_tree/icons/stop.svg');
+    background-image: url('/icons/stop.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

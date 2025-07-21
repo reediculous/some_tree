@@ -1,4 +1,4 @@
-const SCENARIO_URL = '/scenarios/example.json';
+const SCENARIO_URL = './scenarios/example.json';
 const SOUNDS_DIR = '/sounds/';
 
 const app = document.getElementById('app');

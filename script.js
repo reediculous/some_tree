@@ -26,7 +26,7 @@ class AudioLooper {
     }
 
     play(syncToTime = null) {
-        if (this.isPlaying) return; // <<<<<<<< CRITICAL FIX
+        if (this.isPlaying) return;
         if (!this.ready) {
             this.audio.addEventListener("loadedmetadata", () => this._actualPlay(syncToTime), { once: true });
         } else {
@@ -145,7 +145,58 @@ function processScenario(scenario) {
                 doStep();
             };
             app.appendChild(btn);
-        } else if (action.action === "wait") {
+        }
+        // --- CHOOSE action branch ---
+        else if (action.action === "choose") {
+            // Create a container for the buttons
+            const container = document.createElement('div');
+            container.style.margin = "1em 0";
+            // Array to track the buttons to disable all after a choice
+            const btns = [];
+            for (const option of action.options) {
+                const btn = document.createElement('button');
+                btn.textContent = `choose ${option.audio}`;
+                btn.onclick = async () => {
+                    if (scenarioStartTime === null) scenarioStartTime = performance.now();
+
+                    if (!audioLoopers[option.audio]) {
+                        audioLoopers[option.audio] = new AudioLooper(option.audio);
+                    }
+                    const thisLooper = audioLoopers[option.audio];
+
+                    if (thisLooper.isPlaying) {
+                        btns.forEach(b => b.disabled = true);
+                        step++;
+                        doStep();
+                        return;
+                    }
+
+                    // Sync with previous active looper as for play
+                    const prevLooper = findPreviousActiveLooper(step, scenario);
+                    if (prevLooper) {
+                        const ensurePlayOnNextLoop = () => {
+                            const nextLoopStart = prevLooper.getNextLoopStartTime();
+                            if (nextLoopStart === null) {
+                                setTimeout(ensurePlayOnNextLoop, 50);
+                            } else {
+                                thisLooper.play(nextLoopStart);
+                            }
+                        };
+                        ensurePlayOnNextLoop();
+                    } else {
+                        thisLooper.play();
+                    }
+                    btns.forEach(b => b.disabled = true);
+                    step++;
+                    doStep();
+                };
+                container.appendChild(btn);
+                btns.push(btn);
+            }
+            app.appendChild(container);
+        }
+        // --- END OF CHOOSE ---
+        else if (action.action === "wait") {
             const targetElapsed = timeOfPreviousAction(step, scenario) + (action.seconds * 1000);
             const now = performance.now();
             let waitFor = 0;
@@ -180,10 +231,21 @@ function processScenario(scenario) {
 
 function findPreviousActiveLooper(step, scenario) {
     for (let i = step - 1; i >= 0; --i) {
-        if (scenario[i].action === "play") {
-            const audio = scenario[i].audio;
-            if (audioLoopers[audio] && audioLoopers[audio].isPlaying) {
-                return audioLoopers[audio];
+        if (
+            scenario[i].action === "play" ||
+            scenario[i].action === "choose"
+        ) {
+            // For choose, consider all options
+            let audios = [];
+            if (scenario[i].action === "play") {
+                audios = [scenario[i].audio];
+            } else if (scenario[i].action === "choose") {
+                audios = scenario[i].options.map(opt => opt.audio);
+            }
+            for (const audio of audios) {
+                if (audioLoopers[audio] && audioLoopers[audio].isPlaying) {
+                    return audioLoopers[audio];
+                }
             }
         }
     }

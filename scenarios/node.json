@@ -1,0 +1,40 @@
+[{
+    "1": {
+        "question": "Привет",
+        "options": [
+            {"text": "Старт", "action": "+1", "next": "2"}
+        ],
+        "image": "img0.png"
+    },
+    "2": {
+        "question": "ты срал сегодня?",
+        "options": [
+            {"text": "Да", "action": "+2a", "next": "3"},
+            {"text": "Нет", "action": "+2b", "next": "4"}
+        ],
+        "image": "img1.png"
+    },
+    "3": {
+        "question": "хорошо посрал?",
+        "options": [
+            {"text": "Да", "action": "+3a"},
+            {"text": "Нет", "action": "+3b"}
+        ],
+        "image": "img2.png"
+    },
+    "4": {
+        "question": "запор?",
+        "options": [
+            {"text": "Да", "action": "+3c", "next": "5"},
+            {"text": "Нет", "action": "+3d", "next": "5"}
+        ],
+        "image": "img3.png"
+    },
+    "5": {
+        "question": "как мама?",
+        "options": [
+            {"text": "хорошо", "action": "+4a;-2b"}
+        ],
+        "image": "img4.png"
+    }
+}]

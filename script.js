@@ -1,4 +1,4 @@
-const SCENARIO_URL = '/some_tree/scenarios/example.json';
+const SCENARIO_URL = '/some_tree/scenarios/node.json';
 const SOUNDS_DIR = '/some_tree/sounds/';
 
 const app = document.getElementById('app');
@@ -91,179 +91,130 @@ class AudioLooper {
 }
 
 const audioLoopers = {};
-let scenarioStartTime = null;
+let quizState = {
+    currentNodeId: null,
+};
+let scenarioTree = null;
+
+// Helper: Find any active looper (returns the first one it finds)
+function findActiveLooper() {
+    // Option: you could select the "newest" or just the first found
+    let found = null;
+    for (let key in audioLoopers) {
+        if (audioLoopers[key].isPlaying) {
+            found = audioLoopers[key];
+        }
+    }
+    return found;
+}
 
 async function start() {
     const response = await fetch(SCENARIO_URL);
-    const scenario = await response.json();
-    processScenario(scenario);
+    const treeArr = await response.json();
+    scenarioTree = treeArr[0];
+    quizState.currentNodeId = "1";
+    showCurrentNode();
 }
 
-function processScenario(scenario) {
-    let step = 0;
+function showCurrentNode() {
+    const nodeId = quizState.currentNodeId;
+    const node = scenarioTree[nodeId];
     app.innerHTML = "";
 
-    function doStep() {
-        if (step >= scenario.length) return;
-        const action = scenario[step];
+    if (node.image) {
+        const img = document.createElement('img');
+        img.src = `/some_tree/images/${node.image}`;
+        img.alt = '';
+        img.style.maxWidth = "300px";
+        img.style.display = "block";
+        img.style.margin = "1em auto";
+        app.appendChild(img);
+    }
 
-        if (action.action === "play") {
+    const questionEl = document.createElement('div');
+    questionEl.className = 'question-text';
+    questionEl.textContent = node.question;
+    questionEl.style.fontWeight = "bold";
+    questionEl.style.fontSize = "1.2em";
+    questionEl.style.margin = "1em 0";
+    app.appendChild(questionEl);
+
+    if (node.options && node.options.length > 0) {
+        const optionsDiv = document.createElement('div');
+        optionsDiv.style.display = "flex";
+        optionsDiv.style.flexDirection = "column";
+        optionsDiv.style.gap = "1em";
+
+        node.options.forEach(option => {
             const btn = document.createElement('button');
-            btn.className = 'play-btn';
-            btn.textContent = `play ${action.audio}`;
-            btn.onclick = async () => {
-                if (scenarioStartTime === null) scenarioStartTime = performance.now();
-
-                if (!audioLoopers[action.audio]) {
-                    audioLoopers[action.audio] = new AudioLooper(action.audio);
-                }
-
-                const thisLooper = audioLoopers[action.audio];
-
-                if (thisLooper.isPlaying) {
-                    btn.remove();
-                    step++;
-                    doStep();
-                    return;
-                }
-
-                const prevLooper = findPreviousActiveLooper(step, scenario);
-                if (prevLooper) {
-                    const ensurePlayOnNextLoop = () => {
-                        const nextLoopStart = prevLooper.getNextLoopStartTime();
-                        if (nextLoopStart === null) {
-                            setTimeout(ensurePlayOnNextLoop, 50);
-                        } else {
-                            thisLooper.play(nextLoopStart);
-                        }
-                    };
-                    ensurePlayOnNextLoop();
-                } else {
-                    thisLooper.play();
-                }
-                btn.remove();
-                step++;
-                doStep();
-            };
-            app.appendChild(btn);
-        }
-        // --- CHOOSE action branch ---
-        else if (action.action === "choose") {
-            // Create a container for the buttons
-            const container = document.createElement('div');
-            container.style.margin = "1em 0";
-            // Array to track the buttons to disable all after a choice
-            const btns = [];
-            for (const option of action.options) {
-                const btn = document.createElement('button');
-                btn.className = 'choose-btn';
-                btn.textContent = `choose ${option.audio}`;
-                btn.onclick = async () => {
-                    if (scenarioStartTime === null) scenarioStartTime = performance.now();
-
-                    if (!audioLoopers[option.audio]) {
-                        audioLoopers[option.audio] = new AudioLooper(option.audio);
-                    }
-                    const thisLooper = audioLoopers[option.audio];
-
-                    if (thisLooper.isPlaying) {
-                        container.remove();
-                        step++;
-                        doStep();
-                        return;
-                    }
-
-                    // Sync with previous active looper as for play
-                    const prevLooper = findPreviousActiveLooper(step, scenario);
-                    if (prevLooper) {
-                        const ensurePlayOnNextLoop = () => {
-                            const nextLoopStart = prevLooper.getNextLoopStartTime();
-                            if (nextLoopStart === null) {
-                                setTimeout(ensurePlayOnNextLoop, 50);
-                            } else {
-                                thisLooper.play(nextLoopStart);
-                            }
-                        };
-                        ensurePlayOnNextLoop();
-                    } else {
-                        thisLooper.play();
-                    }
-                    container.remove();
-                    step++;
-                    doStep();
-                };
-                container.appendChild(btn);
-                btns.push(btn);
-            }
-            app.appendChild(container);
-        }
-        // --- END OF CHOOSE ---
-        else if (action.action === "wait") {
-            const targetElapsed = timeOfPreviousAction(step, scenario) + (action.seconds * 1000);
-            const now = performance.now();
-            let waitFor = 0;
-            if (scenarioStartTime !== null)
-                waitFor = Math.max(0, targetElapsed - (now - scenarioStartTime));
-            else
-                waitFor = action.seconds * 1000;
-            setTimeout(() => {
-                step++;
-                doStep();
-            }, waitFor);
-        } else if (action.action === "stop") {
-            const btn = document.createElement('button');
-            btn.className = 'stop-btn';
-            btn.textContent = `stop ${action.audio}`;
+            btn.className = 'option-btn';
+            btn.textContent = option.text;
+            btn.style.fontSize = "1em";
+            btn.style.padding = "0.7em 1.2em";
             btn.onclick = () => {
-                if (audioLoopers[action.audio]) {
-                    audioLoopers[action.audio].scheduleStopAfterLoop();
+                // SYNC NEW AUDIO TO ACTIVE LOOPER, IF EXISTS
+                if (option.action) {
+                    option.action.split(';').map(s => s.trim()).forEach(actionStr => {
+                        if (!actionStr) return;
+                        if (actionStr.startsWith('+')) {
+                            // Play loop (if not already active)
+                            const audioKey = actionStr.substring(1) + ".wav";
+                            if (!audioLoopers[audioKey]) {
+                                audioLoopers[audioKey] = new AudioLooper(audioKey);
+                            }
+                            const looper = audioLoopers[audioKey];
+                            if (!looper.isPlaying) {
+                                // *** Here is the sync logic: ***
+                                const prevLooper = findActiveLooper();
+                                if (prevLooper) {
+                                    // Wait for next loop of the latest active looper!
+                                    const trySync = () => {
+                                        const syncTo = prevLooper.getNextLoopStartTime();
+                                        if (syncTo === null) {
+                                            setTimeout(trySync, 30);
+                                        } else {
+                                            looper.play(syncTo);
+                                        }
+                                    };
+                                    trySync();
+                                } else {
+                                    looper.play();
+                                }
+                            }
+                        } else if (actionStr.startsWith('-')) {
+                            // Schedule stop for that loop
+                            const audioKey = actionStr.substring(1) + ".wav";
+                            if (audioLoopers[audioKey]) {
+                                audioLoopers[audioKey].scheduleStopAfterLoop();
+                            }
+                        }
+                    });
                 }
-                btn.remove();
-                step++;
-                doStep();
+                if (option.next && scenarioTree[option.next]) {
+                    quizState.currentNodeId = option.next;
+                    showCurrentNode();
+                } else {
+                    showEndState();
+                }
             };
-            app.appendChild(btn);
-        } else {
-            step++;
-            doStep();
-        }
-    }
+            optionsDiv.appendChild(btn);
+        });
 
-    doStep();
+        app.appendChild(optionsDiv);
+    } else {
+        showEndState();
+    }
 }
 
-function findPreviousActiveLooper(step, scenario) {
-    for (let i = step - 1; i >= 0; --i) {
-        if (
-            scenario[i].action === "play" ||
-            scenario[i].action === "choose"
-        ) {
-            // For choose, consider all options
-            let audios = [];
-            if (scenario[i].action === "play") {
-                audios = [scenario[i].audio];
-            } else if (scenario[i].action === "choose") {
-                audios = scenario[i].options.map(opt => opt.audio);
-            }
-            for (const audio of audios) {
-                if (audioLoopers[audio] && audioLoopers[audio].isPlaying) {
-                    return audioLoopers[audio];
-                }
-            }
-        }
-    }
-    return null;
-}
-
-function timeOfPreviousAction(step, scenario) {
-    let elapsedMs = 0;
-    for (let i = 0; i < step; ++i) {
-        const action = scenario[i];
-        if (action.action === "wait") {
-            elapsedMs += action.seconds * 1000;
-        }
-    }
-    return elapsedMs;
+function showEndState() {
+    app.innerHTML = "";
+    const finishedDiv = document.createElement('div');
+    finishedDiv.textContent = "Конец";
+    finishedDiv.style.fontWeight = "bold";
+    finishedDiv.style.fontSize = "1.3em";
+    finishedDiv.style.margin = "2em";
+    finishedDiv.style.textAlign = "center";
+    app.appendChild(finishedDiv);
 }
 
 start();

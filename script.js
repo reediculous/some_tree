@@ -1,5 +1,5 @@
-const SCENARIO_URL = '/some_tree/scenarios/node.json';
-const SOUNDS_DIR = '/some_tree/sounds/';
+const SCENARIO_URL = 'scenarios/node.json';
+const SOUNDS_DIR = 'sounds/';
 
 const app = document.getElementById('app');
 
@@ -98,7 +98,6 @@ let scenarioTree = null;
 
 // Helper: Find any active looper (returns the first one it finds)
 function findActiveLooper() {
-    // Option: you could select the "newest" or just the first found
     let found = null;
     for (let key in audioLoopers) {
         if (audioLoopers[key].isPlaying) {
@@ -121,80 +120,90 @@ function showCurrentNode() {
     const node = scenarioTree[nodeId];
     app.innerHTML = "";
 
-    if (node.image) {
-        const img = document.createElement('img');
-        img.src = `/some_tree/images/${node.image}`;
-        img.alt = '';
-        app.appendChild(img);
-    }
+    let delayMs = (typeof node.delay === "number" && node.delay > 0) ? node.delay : 0;
 
-    const questionEl = document.createElement('div');
-    questionEl.className = 'question-text';
-    questionEl.textContent = node.question;
-    app.appendChild(questionEl);
+    const renderEverything = () => {
 
-    if (node.options && node.options.length > 0) {
-        const optionsDiv = document.createElement('div');
-        optionsDiv.style.display = "flex";
-        optionsDiv.style.flexDirection = "column";
+        // === IMAGE ===
+        if (node.image) {
+            const img = document.createElement('img');
+            img.src = `/some_tree/images/${node.image}`;
+            img.alt = '';
+            app.appendChild(img);
+        }
 
-        node.options.forEach(option => {
-            const btn = document.createElement('button');
-            btn.className = 'option-btn';
-            btn.textContent = option.text;
-            btn.onclick = () => {
-                // SYNC NEW AUDIO TO ACTIVE LOOPER, IF EXISTS
-                if (option.action) {
-                    option.action.split(';').map(s => s.trim()).forEach(actionStr => {
-                        if (!actionStr) return;
-                        if (actionStr.startsWith('+')) {
-                            // Play loop (if not already active)
-                            const audioKey = actionStr.substring(1) + ".wav";
-                            if (!audioLoopers[audioKey]) {
-                                audioLoopers[audioKey] = new AudioLooper(audioKey);
-                            }
-                            const looper = audioLoopers[audioKey];
-                            if (!looper.isPlaying) {
-                                // *** Here is the sync logic: ***
-                                const prevLooper = findActiveLooper();
-                                if (prevLooper) {
-                                    // Wait for next loop of the latest active looper!
-                                    const trySync = () => {
-                                        const syncTo = prevLooper.getNextLoopStartTime();
-                                        if (syncTo === null) {
-                                            setTimeout(trySync, 30);
-                                        } else {
-                                            looper.play(syncTo);
-                                        }
-                                    };
-                                    trySync();
-                                } else {
-                                    looper.play();
+        // === QUESTION ===
+        const questionEl = document.createElement('div');
+        questionEl.className = 'question-text';
+        questionEl.textContent = node.question;
+        app.appendChild(questionEl);
+
+        // === OPTIONS ===
+        if (node.options && node.options.length > 0) {
+            const optionsDiv = document.createElement('div');
+            optionsDiv.style.display = "flex";
+            optionsDiv.style.flexDirection = "column";
+
+            node.options.forEach(option => {
+                const btn = document.createElement('button');
+                btn.className = 'option-btn';
+                btn.textContent = option.text;
+                btn.onclick = () => {
+                    // SYNC NEW AUDIO TO ACTIVE LOOPER, IF EXISTS
+                    if (option.action) {
+                        option.action.split(';').map(s => s.trim()).forEach(actionStr => {
+                            if (!actionStr) return;
+                            if (actionStr.startsWith('+')) {
+                                // Play loop (if not already active)
+                                const audioKey = actionStr.substring(1) + ".wav";
+                                if (!audioLoopers[audioKey]) {
+                                    audioLoopers[audioKey] = new AudioLooper(audioKey);
+                                }
+                                const looper = audioLoopers[audioKey];
+                                if (!looper.isPlaying) {
+                                    // *** Here is the sync logic: ***
+                                    const prevLooper = findActiveLooper();
+                                    if (prevLooper) {
+                                        // Wait for next loop of the latest active looper!
+                                        const trySync = () => {
+                                            const syncTo = prevLooper.getNextLoopStartTime();
+                                            if (syncTo === null) {
+                                                setTimeout(trySync, 30);
+                                            } else {
+                                                looper.play(syncTo);
+                                            }
+                                        };
+                                        trySync();
+                                    } else {
+                                        looper.play();
+                                    }
+                                }
+                            } else if (actionStr.startsWith('-')) {
+                                // Schedule stop for that loop
+                                const audioKey = actionStr.substring(1) + ".wav";
+                                if (audioLoopers[audioKey]) {
+                                    audioLoopers[audioKey].scheduleStopAfterLoop();
                                 }
                             }
-                        } else if (actionStr.startsWith('-')) {
-                            // Schedule stop for that loop
-                            const audioKey = actionStr.substring(1) + ".wav";
-                            if (audioLoopers[audioKey]) {
-                                audioLoopers[audioKey].scheduleStopAfterLoop();
-                            }
-                        }
-                    });
-                }
-                if (option.next && scenarioTree[option.next]) {
-                    quizState.currentNodeId = option.next;
-                    showCurrentNode();
-                } else {
-                    showEndState();
-                }
-            };
-            optionsDiv.appendChild(btn);
-        });
+                        });
+                    }
+                    if (option.next && scenarioTree[option.next]) {
+                        quizState.currentNodeId = option.next;
+                        showCurrentNode();
+                    } else {
+                        showEndState();
+                    }
+                };
+                optionsDiv.appendChild(btn);
+            });
 
-        app.appendChild(optionsDiv);
-    } else {
-        showEndState();
-    }
+            app.appendChild(optionsDiv);
+        } else {
+            showEndState();
+        }
+    };
+
+    setTimeout(renderEverything, delayMs);
 }
 
 function showEndState() {

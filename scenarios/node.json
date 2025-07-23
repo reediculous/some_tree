@@ -33,7 +33,7 @@
     "5": {
         "question": "Продолжить?",
         "options": [
-            {"text": "хорошо", "action": "+4a;-2b"}
+            {"text": "Хорошо", "action": "+4a;-2b"}
         ],
         "image": "img4.png"
     }

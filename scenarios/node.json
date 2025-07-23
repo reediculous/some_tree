@@ -7,23 +7,23 @@
         "image": "img0.png"
     },
     "2": {
-        "question": "ты срал сегодня?",
+        "question": "Дерево?",
         "options": [
-            {"text": "Да", "action": "+2a", "next": "3"},
-            {"text": "Нет", "action": "+2b", "next": "4"}
+            {"text": "Ясень", "action": "+2a", "next": "3"},
+            {"text": "Осина", "action": "+2b", "next": "4"}
         ],
         "image": "img1.png"
     },
     "3": {
-        "question": "хорошо посрал?",
+        "question": "Есть ли буква А в названии любимого цвета?",
         "options": [
-            {"text": "Да", "action": "+3a"},
-            {"text": "Нет", "action": "+3b"}
+            {"text": "Да", "action": "+3a", "next": "5"},
+            {"text": "Нет", "action": "+3b", "next": "5"}
         ],
         "image": "img2.png"
     },
     "4": {
-        "question": "запор?",
+        "question": "Есть ли буква Е в названии любимого цвета?",
         "options": [
             {"text": "Да", "action": "+3c", "next": "5"},
             {"text": "Нет", "action": "+3d", "next": "5"}
@@ -31,7 +31,7 @@
         "image": "img3.png"
     },
     "5": {
-        "question": "как мама?",
+        "question": "Продолжить?",
         "options": [
             {"text": "хорошо", "action": "+4a;-2b"}
         ],

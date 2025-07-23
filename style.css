@@ -80,46 +80,51 @@ body {
     color: #CACFD6;
     box-shadow: 0 4px 16px 0 rgba(64, 199, 122, 0.05);
 }
+/* For final nodes: make the page take all height and push credits to bottom */
+.final-node-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
 
+/* Make credits smaller and bottom-aligned */
 .end-credits {
     color: #01161E;
     text-align: center;
-    font-size: 2.2em;
+    font-size: 1.05em;
     font-family: Helvetica;
-    font-weight: 450;
-    letter-spacing: 0.07em;
-    margin-top: 60px;
-    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    margin-top: auto;
+    margin-bottom: 24px;
+    line-height: 1.3;
+    opacity: 0.93;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .credit-item {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    font-weight: 400;
 }
 
 .credit-item:last-child {
     margin-bottom: 0;
 }
 
-.credit-link {
-    color: #01161E;
-    text-decoration: underline;
-    transition: opacity 0.3s ease;
-}
-
-.credit-link:hover {
-    opacity: 0.7;
-    text-decoration: underline;
-}
-
-/* Responsive design */
+/* Responsive: even smaller on mobile */
 @media (max-width: 700px) {
     .end-credits {
-        font-size: 1.4em;
-        margin-top: 40px;
+        font-size: 0.85em;
+        margin-bottom: 14px;
     }
-
     .credit-item {
-        margin-bottom: 20px;
+        margin-bottom: 6px;
     }
 }
 

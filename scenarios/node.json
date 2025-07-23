@@ -5,7 +5,8 @@
         "options": [
             {"text": "давайте исполним", "action": "+1", "next": "2"}
         ],
-        "image": "img1.png"
+        "image": "img1.png",
+        "final": false
     },
     "2": {
         "question": "Question2",
@@ -14,7 +15,8 @@
             {"text": "Option1", "action": "+2a", "next": "3"},
             {"text": "Option2", "action": "+2b", "next": "4"}
         ],
-        "image": "img2.png"
+        "image": "img2.png",
+        "final": false
     },
     "3": {
         "question": "Question3",
@@ -23,7 +25,8 @@
             {"text": "Option1", "action": "+3a", "next": "5"},
             {"text": "Option2", "action": "+3b", "next": "6"}
         ],
-        "image": "img3.png"
+        "image": "img3.png",
+        "final": false
     },
     "4": {
         "question": "Question4",
@@ -32,7 +35,8 @@
             {"text": "Option1", "action": "+3c", "next": "7"},
             {"text": "Option2", "action": "+3d", "next": "8"}
         ],
-        "image": "img4.png"
+        "image": "img4.png",
+        "final": false
     },
     "5": {
         "question": "Question5",
@@ -41,7 +45,8 @@
             {"text": "Option1", "action": "+4along", "next": "9"},
             {"text": "Option2", "action": "+4b", "next": "10"}
         ],
-        "image": "img5.png"
+        "image": "img5.png",
+        "final": false
     },
     "6": {
         "question": "Question6",
@@ -50,7 +55,8 @@
             {"text": "Option1", "action": "+4c", "next": "11"},
             {"text": "Option2", "action": "+4d", "next": "12"}
         ],
-        "image": "img6.png"
+        "image": "img6.png",
+        "final": false
     },
     "7": {
         "question": "Question7",
@@ -59,7 +65,8 @@
             {"text": "Option1", "action": "+4a", "next": "13"},
             {"text": "Option2", "action": "+4b", "next": "14"}
         ],
-        "image": "img7.png"
+        "image": "img7.png",
+        "final": false
     },
     "8": {
         "question": "Question8",
@@ -68,7 +75,8 @@
             {"text": "Option1", "action": "+4a", "next": "15"},
             {"text": "Option2", "action": "+4c", "next": "16"}
         ],
-        "image": "img8.png"
+        "image": "img8.png",
+        "final": false
     },
     "9": {
         "question": "Question9",
@@ -76,7 +84,8 @@
         "options": [
             {"text": "Option1", "action": "+4a;-4along", "next": "17"}
         ],
-        "image": "img9.png"
+        "image": "img9.png",
+        "final": false
     },
     "10": {
         "question": "Question10",
@@ -84,7 +93,8 @@
         "options": [
             {"text": "Option1", "action": "+4along", "next": "18"}
         ],
-        "image": "img10.png"
+        "image": "img10.png",
+        "final": false
     },
     "11": {
         "question": "Question11",
@@ -92,7 +102,8 @@
         "options": [
             {"text": "Option1", "action": "+4d", "next": "19"}
         ],
-        "image": "img11.png"
+        "image": "img11.png",
+        "final": false
     },
     "12": {
         "question": "Question12",
@@ -100,7 +111,8 @@
         "options": [
             {"text": "Option1", "action": "+4c", "next": "20"}
         ],
-        "image": "img12.png"
+        "image": "img12.png",
+        "final": false
     },
     "13": {
         "question": "Question13",
@@ -109,7 +121,8 @@
             {"text": "Option1", "action": "+6a", "next": "21"},
             {"text": "Option2", "action": "+5c", "next": "22"}
         ],
-        "image": "img13.png"
+        "image": "img13.png",
+        "final": false
     },
     "14": {
         "question": "Question14",
@@ -118,7 +131,8 @@
             {"text": "Option1", "action": "+5c", "next": "23"},
             {"text": "Option2", "action": "+5b", "next": "24"}
         ],
-        "image": "img14.png"
+        "image": "img14.png",
+        "final": false
     },
     "15": {
         "question": "Question15",
@@ -127,7 +141,8 @@
             {"text": "Option1", "action": "+6a", "next": "25"},
             {"text": "Option2", "action": "+6b", "next": "26"}
         ],
-        "image": "img15.png"
+        "image": "img15.png",
+        "final": false
     },
     "16": {
         "question": "Question16",
@@ -136,7 +151,8 @@
             {"text": "Option1", "action": "+5c", "next": "27"},
             {"text": "Option2", "action": "+5a", "next": "28"}
         ],
-        "image": "img16.png"
+        "image": "img16.png",
+        "final": false
     },
     "17": {
         "question": "Question17",
@@ -145,7 +161,8 @@
             {"text": "Option1", "action": "+5a;-3a", "next": "29"},
             {"text": "Option2", "action": "+5c", "next": "30"}
         ],
-        "image": "img17.png"
+        "image": "img17.png",
+        "final": false
     },
     "18": {
         "question": "Question18",
@@ -154,7 +171,8 @@
             {"text": "Option1", "action": "+5a;-3a", "next": "31"},
             {"text": "Option2", "action": "+5c", "next": "32"}
         ],
-        "image": "img18.png"
+        "image": "img18.png",
+        "final": false
     },
     "19": {
         "question": "Question19",
@@ -163,7 +181,8 @@
             {"text": "Option1", "action": "+5b;-3b", "next": "33"},
             {"text": "Option2", "action": "+5c", "next": "34"}
         ],
-        "image": "img19.png"
+        "image": "img19.png",
+        "final": false
     },
     "20": {
         "question": "Question20",
@@ -172,7 +191,8 @@
             {"text": "Option1", "action": "+5a;-3b", "next": "35"},
             {"text": "Option2", "action": "+5b;-3b", "next": "36"}
         ],
-        "image": "img20.png"
+        "image": "img20.png",
+        "final": false
     },
     "21": {
         "question": "Question21",
@@ -180,7 +200,8 @@
         "options": [
             {"text": "Option1", "action": "+5a;-6a", "next": "37"}
         ],
-        "image": "img21.png"
+        "image": "img21.png",
+        "final": false
     },
     "22": {
         "question": "Question22",
@@ -188,7 +209,8 @@
         "options": [
             {"text": "Option1", "action": "+6c;-5c", "next": "38"}
         ],
-        "image": "img22.png"
+        "image": "img22.png",
+        "final": false
     },
     "23": {
         "question": "Question23",
@@ -196,7 +218,8 @@
         "options": [
             {"text": "Option1", "action": "+6c;-5c", "next": "39"}
         ],
-        "image": "img23.png"
+        "image": "img23.png",
+        "final": false
     },
     "24": {
         "question": "Question24",
@@ -204,7 +227,8 @@
         "options": [
             {"text": "Option1", "action": "+6b;-5b", "next": "40"}
         ],
-        "image": "img24.png"
+        "image": "img24.png",
+        "final": false
     },
     "25": {
         "question": "Question25",
@@ -212,7 +236,8 @@
         "options": [
             {"text": "Option1", "action": "+5a;-6a;-3d", "next": "41"}
         ],
-        "image": "img25.png"
+        "image": "img25.png",
+        "final": false
     },
     "26": {
         "question": "Question26",
@@ -220,7 +245,8 @@
         "options": [
             {"text": "Option1", "action": "+5b;-6b;-3d", "next": "42"}
         ],
-        "image": "img26.png"
+        "image": "img26.png",
+        "final": false
     },
     "27": {
         "question": "Question27",
@@ -228,7 +254,8 @@
         "options": [
             {"text": "Option1", "action": "+6c;-5c", "next": "43"}
         ],
-        "image": "img27.png"
+        "image": "img27.png",
+        "final": false
     },
     "28": {
         "question": "Question28",
@@ -236,7 +263,8 @@
         "options": [
             {"text": "Option1", "action": "+6c;-5a", "next": "44"}
         ],
-        "image": "img28.png"
+        "image": "img28.png",
+        "final": false
     },
     "29": {
         "question": "Question29",
@@ -244,7 +272,8 @@
         "options": [
             {"text": "Option1", "action": "+6a;-5a", "next": "45"}
         ],
-        "image": "img29.png"
+        "image": "img29.png",
+        "final": false
     },
     "30": {
         "question": "Question30",
@@ -252,7 +281,8 @@
         "options": [
             {"text": "Option1", "action": "+6c;-5c", "next": "46"}
         ],
-        "image": "img30.png"
+        "image": "img30.png",
+        "final": false
     },
     "31": {
         "question": "Question31",
@@ -260,7 +290,8 @@
         "options": [
             {"text": "Option1", "action": "+6a;-5a", "next": "47"}
         ],
-        "image": "img31.png"
+        "image": "img31.png",
+        "final": false
     },
     "32": {
         "question": "Question32",
@@ -268,7 +299,8 @@
         "options": [
             {"text": "Option1", "action": "+6c;-5c", "next": "48"}
         ],
-        "image": "img32.png"
+        "image": "img32.png",
+        "final": false
     },
     "33": {
         "question": "Question33",
@@ -276,7 +308,8 @@
         "options": [
             {"text": "Option1", "action": "+6b;-5b", "next": "49"}
         ],
-        "image": "img33.png"
+        "image": "img33.png",
+        "final": false
     },
     "34": {
         "question": "Question34",
@@ -284,7 +317,8 @@
         "options": [
             {"text": "Option1", "action": "+6c;-5c", "next": "50"}
         ],
-        "image": "img34.png"
+        "image": "img34.png",
+        "final": false
     },
     "35": {
         "question": "Question35",
@@ -292,7 +326,8 @@
         "options": [
             {"text": "Option1", "action": "+6a;-5a", "next": "51"}
         ],
-        "image": "img35.png"
+        "image": "img35.png",
+        "final": false
     },
     "36": {
         "question": "Question36",
@@ -300,7 +335,8 @@
         "options": [
             {"text": "Option1", "action": "+6b;-5b", "next": "52"}
         ],
-        "image": "img36.png"
+        "image": "img36.png",
+        "final": false
     },
     "37": {
         "question": "Question37",
@@ -308,7 +344,8 @@
         "options": [
             {"text": "Option1", "action": "-1", "next": "53"}
         ],
-        "image": "img37.png"
+        "image": "img37.png",
+        "final": false
     },
     "38": {
         "question": "Question38",
@@ -316,7 +353,8 @@
         "options": [
             {"text": "Option1", "action": "-1", "next": "53"}
         ],
-        "image": "img38.png"
+        "image": "img38.png",
+        "final": false
     },
     "39": {
         "question": "Question39",
@@ -324,7 +362,8 @@
         "options": [
             {"text": "Option1", "action": "-1", "next": "54"}
         ],
-        "image": "img39.png"
+        "image": "img39.png",
+        "final": false
     },
     "40": {
         "question": "Question40",
@@ -332,7 +371,8 @@
         "options": [
             {"text": "Option1", "action": "-1", "next": "54"}
         ],
-        "image": "img40.png"
+        "image": "img40.png",
+        "final": false
     },
     "41": {
         "question": "Question41",
@@ -340,7 +380,8 @@
         "options": [
             {"text": "Option1", "action": "-6a", "next": "55"}
         ],
-        "image": "img41.png"
+        "image": "img41.png",
+        "final": false
     },
     "42": {
         "question": "Question42",
@@ -348,7 +389,8 @@
         "options": [
             {"text": "Option1", "action": "-5b", "next": "56"}
         ],
-        "image": "img42.png"
+        "image": "img42.png",
+        "final": false
     },
     "43": {
         "question": "Question43",
@@ -357,7 +399,8 @@
             {"text": "Option1", "action": "-3d", "next": "57"},
             {"text": "Option2", "action": "-2b", "next": "58"}
         ],
-        "image": "img43.png"
+        "image": "img43.png",
+        "final": false
     },
     "44": {
         "question": "Question44",
@@ -365,7 +408,8 @@
         "options": [
             {"text": "Option1", "action": "-3d", "next": "59"}
         ],
-        "image": "img44.png"
+        "image": "img44.png",
+        "final": false
     },
     "45": {
         "question": "Question45",
@@ -374,7 +418,8 @@
             {"text": "Option1", "action": "-1", "next": "60"},
             {"text": "Option2", "action": "-2a", "next": "61"}
         ],
-        "image": "img45.png"
+        "image": "img45.png",
+        "final": false
     },
     "46": {
         "question": "Question46",
@@ -383,7 +428,8 @@
             {"text": "Option1", "action": "-1", "next": "60"},
             {"text": "Option2", "action": "-2a", "next": "61"}
         ],
-        "image": "img46.png"
+        "image": "img46.png",
+        "final": false
     },
     "47": {
         "question": "Question47",
@@ -392,7 +438,8 @@
             {"text": "Option1", "action": "-4b", "next": "62"},
             {"text": "Option2", "action": "-1", "next": "63"}
         ],
-        "image": "img47.png"
+        "image": "img47.png",
+        "final": false
     },
     "48": {
         "question": "Question48",
@@ -401,7 +448,8 @@
             {"text": "Option1", "action": "-2a", "next": "64"},
             {"text": "Option2", "action": "-1", "next": "65"}
         ],
-        "image": "img48.png"
+        "image": "img48.png",
+        "final": false
     },
     "49": {
         "question": "Question49",
@@ -410,7 +458,8 @@
             {"text": "Option1", "action": "-3b", "next": "66"},
             {"text": "Option2", "action": "-1", "next": "67"}
         ],
-        "image": "img49.png"
+        "image": "img49.png",
+        "final": false
     },
     "50": {
         "question": "Question50",
@@ -419,7 +468,8 @@
             {"text": "Option1", "action": "-3b", "next": "66"},
             {"text": "Option2", "action": "-1", "next": "67"}
         ],
-        "image": "img50.png"
+        "image": "img50.png",
+        "final": false
     },
     "51": {
         "question": "Question51",
@@ -428,7 +478,8 @@
             {"text": "Option1", "action": "-3b", "next": "68"},
             {"text": "Option2", "action": "-1", "next": "69"}
         ],
-        "image": "img51.png"
+        "image": "img51.png",
+        "final": false
     },
     "52": {
         "question": "Question52",
@@ -437,7 +488,8 @@
             {"text": "Option1", "action": "-3b", "next": "68"},
             {"text": "Option2", "action": "-1", "next": "69"}
         ],
-        "image": "img52.png"
+        "image": "img52.png",
+        "final": false
     },
     "53": {
         "question": "Question53",
@@ -445,7 +497,8 @@
         "options": [
             {"text": "Option1", "action": "-3c", "next": "70"}
         ],
-        "image": "img53.png"
+        "image": "img53.png",
+        "final": false
     },
     "54": {
         "question": "Question54",
@@ -453,7 +506,8 @@
         "options": [
             {"text": "Option1", "action": "-4b", "next": "71"}
         ],
-        "image": "img54.png"
+        "image": "img54.png",
+        "final": false
     },
     "55": {
         "question": "Question55",
@@ -461,7 +515,8 @@
         "options": [
             {"text": "Option1", "action": "-4a", "next": "72"}
         ],
-        "image": "img55.png"
+        "image": "img55.png",
+        "final": false
     },
     "56": {
         "question": "Question56",
@@ -470,7 +525,8 @@
             {"text": "Option1", "action": "-1", "next": "73"},
             {"text": "Option2", "action": "-4a", "next": "74"}
         ],
-        "image": "img56.png"
+        "image": "img56.png",
+        "final": false
     },
     "57": {
         "question": "Question57",
@@ -479,7 +535,8 @@
             {"text": "Option1", "action": "-4c"},
             {"text": "Option2", "action": "-1"}
         ],
-        "image": "img57.png"
+        "image": "img57.png",
+        "final": false
     },
     "58": {
         "question": "Question58",
@@ -488,7 +545,8 @@
             {"text": "Option1", "action": "-3d", "next": "77"},
             {"text": "Option2", "action": "-4c", "next": "78"}
         ],
-        "image": "img58.png"
+        "image": "img58.png",
+        "final": false
     },
     "59": {
         "question": "Question59",
@@ -497,7 +555,8 @@
             {"text": "Option1", "action": "-4c", "next": "79"},
             {"text": "Option2", "action": "-6c", "next": "80"}
         ],
-        "image": "img59.png"
+        "image": "img59.png",
+        "final": false
     },
     "60": {
         "question": "Question60",
@@ -506,7 +565,8 @@
             {"text": "Option1", "action": "-6a", "next": "81"},
             {"text": "Option2", "action": "-4a", "next": "82"}
         ],
-        "image": "img60.png"
+        "image": "img60.png",
+        "final": false
     },
     "61": {
         "question": "Question61",
@@ -515,7 +575,8 @@
             {"text": "Option1", "action": "-6c", "next": "83"},
             {"text": "Option2", "action": "-4a", "next": "84"}
         ],
-        "image": "img61.png"
+        "image": "img61.png",
+        "final": false
     },
     "62": {
         "question": "Question62",
@@ -523,7 +584,8 @@
         "options": [
             {"text": "Option1", "action": "-3a", "next": "85"}
         ],
-        "image": "img62.png"
+        "image": "img62.png",
+        "final": false
     },
     "63": {
         "question": "Question63",
@@ -531,7 +593,8 @@
         "options": [
             {"text": "Option1", "action": "-3a", "next": "85"}
         ],
-        "image": "img63.png"
+        "image": "img63.png",
+        "final": false
     },
     "64": {
         "question": "Question64",
@@ -539,7 +602,8 @@
         "options": [
             {"text": "Option1", "action": "-3a", "next": "85"}
         ],
-        "image": "img64.png"
+        "image": "img64.png",
+        "final": false
     },
     "65": {
         "question": "Question65",
@@ -547,7 +611,8 @@
         "options": [
             {"text": "Option1", "action": "-3a", "next": "85"}
         ],
-        "image": "img65.png"
+        "image": "img65.png",
+        "final": false
     },
     "66": {
         "question": "Question66",
@@ -556,7 +621,8 @@
             {"text": "Option1", "action": "-4c;-4d", "next": "86"},
             {"text": "Option2", "action": "-1", "next": "87"}
         ],
-        "image": "img66.png"
+        "image": "img66.png",
+        "final": false
     },
     "67": {
         "question": "Question67",
@@ -565,7 +631,8 @@
             {"text": "Option1", "action": "-3b", "next": "88"},
             {"text": "Option2", "action": "-4c;-4b", "next": "89"}
         ],
-        "image": "img67.png"
+        "image": "img67.png",
+        "final": false
     },
     "68": {
         "question": "Question68",
@@ -574,7 +641,8 @@
             {"text": "Option1", "action": "-4c;-4d", "next": "90"},
             {"text": "Option2", "action": "-1", "next": "91"}
         ],
-        "image": "img68.png"
+        "image": "img68.png",
+        "final": false
     },
     "69": {
         "question": "Question69",
@@ -583,7 +651,8 @@
             {"text": "Option1", "action": "-3b", "next": "92"},
             {"text": "Option2", "action": "-4c;-4b", "next": "93"}
         ],
-        "image": "img69.png"
+        "image": "img69.png",
+        "final": false
     },
     "70": {
         "question": "Question70",
@@ -591,7 +660,8 @@
         "options": [
             {"text": "Option1", "next": "101"}
         ],
-        "image": "img70.png"
+        "image": "img70.png",
+        "final": false
     },
     "71": {
         "question": "Question71",
@@ -600,7 +670,8 @@
             {"text": "Option1", "action": "-3c", "next": "94"},
             {"text": "Option2", "action": "-2b", "next": "95"}
         ],
-        "image": "img71.png"
+        "image": "img71.png",
+        "final": false
     },
     "72": {
         "question": "Question72",
@@ -608,7 +679,8 @@
         "options": [
             {"text": "Option1", "next": "102"}
         ],
-        "image": "img72.png"
+        "image": "img72.png",
+        "final": false
     },
     "73": {
         "question": "Question73",
@@ -616,7 +688,8 @@
         "options": [
             {"text": "Option1", "action": "-2b", "next": "96"}
         ],
-        "image": "img73.png"
+        "image": "img73.png",
+        "final": false
     },
     "74": {
         "question": "Question74",
@@ -624,7 +697,8 @@
         "options": [
             {"text": "Option1", "action": "-1", "next": "97"}
         ],
-        "image": "img67.png"
+        "image": "img67.png",
+        "final": false
     },
     "75": {
         "question": "Question75",
@@ -632,7 +706,8 @@
         "options": [
             {"text": "Option1", "next": "103"}
         ],
-        "image": "img75.png"
+        "image": "img75.png",
+        "final": false
     },
     "76": {
         "question": "Question76",
@@ -640,7 +715,8 @@
         "options": [
             {"text": "Option1", "next": "104"}
         ],
-        "image": "img76.png"
+        "image": "img76.png",
+        "final": false
     },
     "77": {
         "question": "Question77",
@@ -648,7 +724,8 @@
         "options": [
             {"text": "Option1", "action": "-1", "next": "98"}
         ],
-        "image": "img77.png"
+        "image": "img77.png",
+        "final": false
     },
     "78": {
         "question": "Question78",
@@ -656,7 +733,8 @@
         "options": [
             {"text": "Option1", "action": "-1", "next": "98"}
         ],
-        "image": "img78.png"
+        "image": "img78.png",
+        "final": false
     },
     "79": {
         "question": "Question79",
@@ -664,7 +742,8 @@
         "options": [
             {"text": "Option1", "action": "-1", "next": "98"}
         ],
-        "image": "img79.png"
+        "image": "img79.png",
+        "final": false
     },
     "80": {
         "question": "Question80",
@@ -672,7 +751,8 @@
         "options": [
             {"text": "Option1", "action": "-1", "next": "98"}
         ],
-        "image": "img80.png"
+        "image": "img80.png",
+        "final": false
     },
     "81": {
         "question": "Question81",
@@ -680,7 +760,8 @@
         "options": [
             {"text": "Option1", "action": "+4along", "next": "99"}
         ],
-        "image": "img81.png"
+        "image": "img81.png",
+        "final": false
     },
     "82": {
         "question": "Question82",
@@ -688,7 +769,8 @@
         "options": [
             {"text": "Option1", "action": "+4along", "next": "99"}
         ],
-        "image": "img82.png"
+        "image": "img82.png",
+        "final": false
     },
     "83": {
         "question": "Question83",
@@ -696,7 +778,8 @@
         "options": [
             {"text": "Option1", "action": "+4along", "next": "99"}
         ],
-        "image": "img83.png"
+        "image": "img83.png",
+        "final": false
     },
     "84": {
         "question": "Question84",
@@ -704,7 +787,8 @@
         "options": [
             {"text": "Option1", "action": "+4along", "next": "99"}
         ],
-        "image": "img84.png"
+        "image": "img84.png",
+        "final": false
     },
     "85": {
         "question": "Question85",
@@ -712,7 +796,8 @@
         "options": [
             {"text": "Option1", "action": "-4along", "next": "100"}
         ],
-        "image": "img85.png"
+        "image": "img85.png",
+        "final": false
     },
     "86": {
         "question": "Question86",
@@ -720,7 +805,8 @@
         "options": [
             {"text": "Option1", "next": "105"}
         ],
-        "image": "img86.png"
+        "image": "img86.png",
+        "final": false
     },
     "87": {
         "question": "Question87",
@@ -728,7 +814,8 @@
         "options": [
             {"text": "Option1", "next": "106"}
         ],
-        "image": "img87.png"
+        "image": "img87.png",
+        "final": false
     },
     "88": {
         "question": "Question88",
@@ -736,7 +823,8 @@
         "options": [
             {"text": "Option1", "next": "107"}
         ],
-        "image": "img88.png"
+        "image": "img88.png",
+        "final": false
     },
     "89": {
         "question": "Question89",
@@ -744,7 +832,8 @@
         "options": [
             {"text": "Option1", "next": "108"}
         ],
-        "image": "img89s.png"
+        "image": "img89s.png",
+        "final": false
     },
     "90": {
         "question": "Question90",
@@ -752,7 +841,8 @@
         "options": [
             {"text": "Option1", "next": "109"}
         ],
-        "image": "img90.png"
+        "image": "img90.png",
+        "final": false
     },
     "91": {
         "question": "Question91",
@@ -760,7 +850,8 @@
         "options": [
             {"text": "Option1", "next": "110"}
         ],
-        "image": "img91.png"
+        "image": "img91.png",
+        "final": false
     },
     "92": {
         "question": "Question92",
@@ -768,7 +859,8 @@
         "options": [
             {"text": "Option1", "next": "111"}
         ],
-        "image": "img92.png"
+        "image": "img92.png",
+        "final": false
     },
     "93": {
         "question": "Question93",
@@ -776,7 +868,8 @@
         "options": [
             {"text": "Option1", "next": "112"}
         ],
-        "image": "img93.png"
+        "image": "img93.png",
+        "final": false
     },
     "94": {
         "question": "Question94",
@@ -784,7 +877,8 @@
         "options": [
             {"text": "Option1", "next": "113"}
         ],
-        "image": "img94.png"
+        "image": "img94.png",
+        "final": false
     },
     "95": {
         "question": "Question95",
@@ -792,7 +886,8 @@
         "options": [
             {"text": "Option1", "next": "114"}
         ],
-        "image": "img95.png"
+        "image": "img95.png",
+        "final": false
     },
     "96": {
         "question": "Question96",
@@ -800,7 +895,8 @@
         "options": [
             {"text": "Option1", "next": "115"}
         ],
-        "image": "img96.png"
+        "image": "img96.png",
+        "final": false
     },
     "97": {
         "question": "Question97",
@@ -808,7 +904,8 @@
         "options": [
             {"text": "Option1", "next": "116"}
         ],
-        "image": "img97.png"
+        "image": "img97.png",
+        "final": false
     },
     "98": {
         "question": "Question98",
@@ -816,7 +913,8 @@
         "options": [
             {"text": "Option1", "next": "117"}
         ],
-        "image": "img98.png"
+        "image": "img98.png",
+        "final": false
     },
     "99": {
         "question": "Question99",
@@ -824,7 +922,8 @@
         "options": [
             {"text": "Option1", "next": "118"}
         ],
-        "image": "img99.png"
+        "image": "img99.png",
+        "final": false
     },
     "100": {
         "question": "Question100",
@@ -832,101 +931,197 @@
         "options": [
             {"text": "Option1", "next": "119"}
         ],
-        "image": "img100.png"
+        "image": "img100.png",
+        "final": false
     },
     "101": {
         "question": "Final Answer 1",
+        "subheader": "description",
         "delay": 0,
-        "image": "img101.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img101.png",
+        "final": true
     },
     "102": {
         "question": "Final Answer 2",
+        "subheader": "description",
         "delay": 0,
-        "image": "img102.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img102.png",
+        "final": true
     },
     "103": {
         "question": "Final Answer 3",
+        "subheader": "description",
         "delay": 0,
-        "image": "img103.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img103.png",
+        "final": true
     },
     "104": {
         "question": "Final Answer 4",
+        "subheader": "description",
         "delay": 0,
-        "image": "img104.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img104.png",
+        "final": true
     },
     "105": {
         "question": "Final Answer 5",
+        "subheader": "description",
         "delay": 0,
-        "image": "img105.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img105.png",
+        "final": true
     },
     "106": {
         "question": "Final Answer 6",
+        "subheader": "description",
         "delay": 0,
-        "image": "img106.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img106.png",
+        "final": true
     },
     "107": {
         "question": "Final Answer 7",
+        "subheader": "description",
         "delay": 0,
-        "image": "img107.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img107.png",
+        "final": true
     },
     "108": {
         "question": "Final Answer 8",
+        "subheader": "description",
         "delay": 0,
-        "image": "img108.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img108.png",
+        "final": true
     },
     "109": {
         "question": "Final Answer 9",
+        "subheader": "description",
         "delay": 0,
-        "image": "img109.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img109.png",
+        "final": true
     },
     "110": {
         "question": "Final Answer 10",
+        "subheader": "description",
         "delay": 0,
-        "image": "img110.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img110.png",
+        "final": true
     },
     "111": {
         "question": "Final Answer 11",
+        "subheader": "description",
         "delay": 0,
-        "image": "img111.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img111.png",
+        "final": true
     },
     "112": {
         "question": "Final Answer 12",
+        "subheader": "description",
         "delay": 0,
-        "image": "img112.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img112.png",
+        "final": true
     },
     "113": {
         "question": "Final Answer 13",
+        "subheader": "description",
         "delay": 0,
-        "image": "img113.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img113.png",
+        "final": true
     },
     "114": {
-        "question": "Final Answer 114",
+        "question": "Final Answer 14",
+        "subheader": "description",
         "delay": 0,
-        "image": "img114.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img114.png",
+        "final": true
     },
     "115": {
         "question": "Final Answer 15",
+        "subheader": "description",
         "delay": 0,
-        "image": "img115.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img115.png",
+        "final": true
     },
     "116": {
         "question": "Final Answer 16",
+        "subheader": "description",
         "delay": 0,
-        "image": "img116.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img116.png",
+        "final": true
     },
     "117": {
         "question": "Final Answer 17",
+        "subheader": "description",
         "delay": 0,
-        "image": "img117.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img117.png",
+        "final": true
     },
     "118": {
         "question": "Final Answer 18",
+        "subheader": "description",
         "delay": 0,
-        "image": "img118.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img118.png",
+        "final": true
     },
     "119": {
         "question": "Final Answer 19",
+        "subheader": "description",
         "delay": 0,
-        "image": "img119.png"
+        "options": [
+            {"text": "начать сначала", "action": "refresh"}
+        ],
+        "image": "img119.png",
+        "final": true
     }
 }]

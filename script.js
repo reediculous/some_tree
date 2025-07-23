@@ -115,6 +115,22 @@ async function start() {
     showCurrentNode();
 }
 
+function showCredits() {
+    const creditsDiv = document.createElement('div');
+    creditsDiv.className = 'end-credits';
+
+    creditsDiv.innerHTML = `
+        <div class="credit-item">
+            Идея и музыка: <a href="https://vk.com/buongiorno001" target="_blank" rel="noopener" class="credit-link">Софья Филянина</a>
+        </div>
+        <div class="credit-item">
+            Запрограммировал: <a href="https://vk.com/nizamovdanil" target="_blank" rel="noopener" class="credit-link">Данил Низамов</a>
+        </div>
+    `;
+
+    return creditsDiv;
+}
+
 function showCurrentNode() {
     const nodeId = quizState.currentNodeId;
     const node = scenarioTree[nodeId];
@@ -123,29 +139,41 @@ function showCurrentNode() {
     let delayMs = (typeof node.delay === "number" && node.delay > 0) ? node.delay : 0;
 
     const renderEverything = () => {
+        const isFinal = node.final === true;
+
+        // Use a wrapper div only on final node for bottom-padding credits
+        const mainContainer = isFinal
+            ? document.createElement('div')
+            : app; // use app itself for non-final
+
+        if (isFinal) {
+            mainContainer.className = 'final-node-container';
+        }
 
         // === IMAGE ===
         if (node.image) {
             const img = document.createElement('img');
             img.src = `/some_tree/images/${node.image}`;
             img.alt = '';
-            app.appendChild(img);
+            mainContainer.appendChild(img);
         }
 
         // === QUESTION ===
         const questionEl = document.createElement('div');
         questionEl.className = 'question-text';
         questionEl.textContent = node.question;
-        app.appendChild(questionEl);
+        mainContainer.appendChild(questionEl);
 
         // === SUBTEXT ===
         const subheaderEl = document.createElement('div');
         subheaderEl.className = 'subheader-text';
         subheaderEl.textContent = node.subheader;
-        app.appendChild(subheaderEl);
+        mainContainer.appendChild(subheaderEl);
 
         // === OPTIONS ===
-        if (node.options && node.options.length > 0) {
+        const hasOptions = node.options && node.options.length > 0;
+
+        if (hasOptions) {
             const optionsDiv = document.createElement('div');
             optionsDiv.style.display = "flex";
             optionsDiv.style.flexDirection = "column";
@@ -155,6 +183,10 @@ function showCurrentNode() {
                 btn.className = 'option-btn';
                 btn.textContent = option.text;
                 btn.onclick = () => {
+                    if (option.action && option.action.trim() === "refresh") {
+                        window.location.reload();
+                        return;
+                    }
                     // SYNC NEW AUDIO TO ACTIVE LOOPER, IF EXISTS
                     if (option.action) {
                         option.action.split(';').map(s => s.trim()).forEach(actionStr => {
@@ -196,38 +228,22 @@ function showCurrentNode() {
                     if (option.next && scenarioTree[option.next]) {
                         quizState.currentNodeId = option.next;
                         showCurrentNode();
-                    } else {
-                        showEndState();
                     }
                 };
                 optionsDiv.appendChild(btn);
             });
 
-            app.appendChild(optionsDiv);
-        } else {
-            showEndState();
+            mainContainer.appendChild(optionsDiv);
+        }
+
+        // === END CREDITS ON FINAL NODES ONLY ===
+        if (isFinal) {
+            mainContainer.appendChild(showCredits());
+            app.appendChild(mainContainer);
         }
     };
 
     setTimeout(renderEverything, delayMs);
-}
-
-function showEndState() {
-    app.innerHTML = "";
-
-    const creditsDiv = document.createElement('div');
-    creditsDiv.className = 'end-credits';
-
-    creditsDiv.innerHTML = `
-        <div class="credit-item">
-            Идея и музыка: <a href="https://vk.com/buongiorno001" target="_blank" rel="noopener" class="credit-link">Софья Филянина</a>
-        </div>
-        <div class="credit-item">
-            Запрограммировал: <a href="https://vk.com/nizamovdanil" target="_blank" rel="noopener" class="credit-link">Данил Низамов</a>
-        </div>
-    `;
-
-    app.appendChild(creditsDiv);
 }
 
 start();

@@ -1,5 +1,5 @@
-const SCENARIO_URL = 'scenarios/node.json';
-const SOUNDS_DIR = 'sounds/';
+const SCENARIO_URL = '/some_tree/scenarios/node.json';
+const SOUNDS_DIR = '/some_tree/sounds/';
 
 const app = document.getElementById('app');
 

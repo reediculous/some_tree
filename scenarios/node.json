@@ -1,44 +1,684 @@
 [{
     "1": {
-        "question": "Привет",
+        "question": "Question1",
         "options": [
-            {"text": "Старт", "action": "+1", "next": "2"}
-        ],
-        "image": "img0.png"
-    },
-    "2": {
-        "question": "Дерево?",
-        "delay": 5000,
-        "options": [
-            {"text": "Ясень", "action": "+2a", "next": "3"},
-            {"text": "Осина", "action": "+2b", "next": "4"}
+            {"text": "Option1", "action": "+1", "next": "2"}
         ],
         "image": "img1.png"
     },
-    "3": {
-        "question": "Есть ли буква А в названии любимого цвета?",
-        "delay": 10000,
+    "2": {
+        "question": "Question2",
+        "delay": 2000,
         "options": [
-            {"text": "Да", "action": "+3a", "next": "5"},
-            {"text": "Нет", "action": "+3b", "next": "5"}
+            {"text": "Option1", "action": "+2a", "next": "3"},
+            {"text": "Option2", "action": "+2b", "next": "4"}
         ],
         "image": "img2.png"
     },
-    "4": {
-        "question": "Есть ли буква Е в названии любимого цвета?",
-        "delay": 1000,
+    "3": {
+        "question": "Question3",
+        "delay": 2000,
         "options": [
-            {"text": "Да", "action": "+3c", "next": "5"},
-            {"text": "Нет", "action": "+3d", "next": "5"}
+            {"text": "Option1", "action": "+3a", "next": "5"},
+            {"text": "Option2", "action": "+3b", "next": "6"}
         ],
         "image": "img3.png"
     },
-    "5": {
-        "question": "Продолжить?",
-        "delay": 0,
+    "4": {
+        "question": "Question4",
+        "delay": 2000,
         "options": [
-            {"text": "Хорошо", "action": "+4a;-2b"}
+            {"text": "Option1", "action": "+3c", "next": "7"},
+            {"text": "Option2", "action": "+3d", "next": "8"}
         ],
         "image": "img4.png"
+    },
+    "5": {
+        "question": "Question5",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+4along", "next": "9"},
+            {"text": "Option2", "action": "+4b", "next": "10"}
+        ],
+        "image": "img5.png"
+    },
+    "6": {
+        "question": "Question6",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+4c", "next": "11"},
+            {"text": "Option2", "action": "+4d", "next": "12"}
+        ],
+        "image": "img6.png"
+    },
+    "7": {
+        "question": "Question7",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+4a", "next": "13"},
+            {"text": "Option2", "action": "+4b", "next": "14"}
+        ],
+        "image": "img7.png"
+    },
+    "8": {
+        "question": "Question8",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+4a", "next": "15"},
+            {"text": "Option2", "action": "+4c", "next": "16"}
+        ],
+        "image": "img8.png"
+    },
+    "9": {
+        "question": "Question9",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+4a;-4along", "next": "17"}
+        ],
+        "image": "img9.png"
+    },
+    "10": {
+        "question": "Question10",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+4along", "next": "18"}
+        ],
+        "image": "img10.png"
+    },
+    "11": {
+        "question": "Question11",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+4d", "next": "19"}
+        ],
+        "image": "img11.png"
+    },
+    "12": {
+        "question": "Question12",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+4c", "next": "20"}
+        ],
+        "image": "img12.png"
+    },
+    "13": {
+        "question": "Question13",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+6a", "next": "21"},
+            {"text": "Option2", "action": "+5c", "next": "22"}
+        ],
+        "image": "img13.png"
+    },
+    "14": {
+        "question": "Question14",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+5c", "next": "23"},
+            {"text": "Option2", "action": "+5b", "next": "24"}
+        ],
+        "image": "img14.png"
+    },
+    "15": {
+        "question": "Question15",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+6a", "next": "25"},
+            {"text": "Option2", "action": "+6b", "next": "26"}
+        ],
+        "image": "img15.png"
+    },
+    "16": {
+        "question": "Question16",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+5c", "next": "27"},
+            {"text": "Option2", "action": "+5a", "next": "28"}
+        ],
+        "image": "img16.png"
+    },
+    "17": {
+        "question": "Question17",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+5a;-3a", "next": "29"},
+            {"text": "Option2", "action": "+5c", "next": "30"}
+        ],
+        "image": "img17.png"
+    },
+    "18": {
+        "question": "Question18",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+5a;-3a", "next": "31"},
+            {"text": "Option2", "action": "+5c", "next": "32"}
+        ],
+        "image": "img18.png"
+    },
+    "19": {
+        "question": "Question19",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+5b;-3b", "next": "33"},
+            {"text": "Option2", "action": "+5c", "next": "34"}
+        ],
+        "image": "img19.png"
+    },
+    "20": {
+        "question": "Question20",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+5a;-3b", "next": "35"},
+            {"text": "Option2", "action": "+5b;-3b", "next": "36"}
+        ],
+        "image": "img20.png"
+    },
+    "21": {
+        "question": "Question21",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+5a;-6a", "next": "37"}
+        ],
+        "image": "img21.png"
+    },
+    "22": {
+        "question": "Question22",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+6c;-5c", "next": "38"}
+        ],
+        "image": "img22.png"
+    },
+    "23": {
+        "question": "Question23",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+6c;-5c", "next": "39"}
+        ],
+        "image": "img23.png"
+    },
+    "24": {
+        "question": "Question24",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+6b;-5b", "next": "40"}
+        ],
+        "image": "img24.png"
+    },
+    "25": {
+        "question": "Question25",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+5a;-6a;-3d", "next": "41"}
+        ],
+        "image": "img25.png"
+    },
+    "26": {
+        "question": "Question26",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+5b;-6b;-3d", "next": "42"}
+        ],
+        "image": "img26.png"
+    },
+    "27": {
+        "question": "Question27",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+6c;-5c", "next": "43"}
+        ],
+        "image": "img27.png"
+    },
+    "28": {
+        "question": "Question28",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+6c;-5a", "next": "44"}
+        ],
+        "image": "img28.png"
+    },
+    "29": {
+        "question": "Question29",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+6a;-5a", "next": "45"}
+        ],
+        "image": "img29.png"
+    },
+    "30": {
+        "question": "Question30",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+6c;-5c", "next": "46"}
+        ],
+        "image": "img30.png"
+    },
+    "31": {
+        "question": "Question31",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+6a;-5a", "next": "47"}
+        ],
+        "image": "img31.png"
+    },
+    "32": {
+        "question": "Question32",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+6c;-5c", "next": "48"}
+        ],
+        "image": "img32.png"
+    },
+    "33": {
+        "question": "Question33",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+6b;-5b", "next": "49"}
+        ],
+        "image": "img33.png"
+    },
+    "34": {
+        "question": "Question34",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+6c;-5c", "next": "50"}
+        ],
+        "image": "img34.png"
+    },
+    "35": {
+        "question": "Question35",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+6a;-5a", "next": "51"}
+        ],
+        "image": "img35.png"
+    },
+    "36": {
+        "question": "Question36",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+6b;-5b", "next": "52"}
+        ],
+        "image": "img36.png"
+    },
+    "37": {
+        "question": "Question37",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-1", "next": "53"}
+        ],
+        "image": "img37.png"
+    },
+    "38": {
+        "question": "Question38",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-1", "next": "53"}
+        ],
+        "image": "img38.png"
+    },
+    "39": {
+        "question": "Question39",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-1", "next": "54"}
+        ],
+        "image": "img39.png"
+    },
+    "40": {
+        "question": "Question40",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-1", "next": "54"}
+        ],
+        "image": "img40.png"
+    },
+    "41": {
+        "question": "Question41",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-6a", "next": "55"}
+        ],
+        "image": "img41.png"
+    },
+    "42": {
+        "question": "Question42",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-5b", "next": "56"}
+        ],
+        "image": "img42.png"
+    },
+    "43": {
+        "question": "Question43",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-3d", "next": "57"},
+            {"text": "Option2", "action": "-2b", "next": "58"}
+        ],
+        "image": "img43.png"
+    },
+    "44": {
+        "question": "Question44",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-3d", "next": "59"}
+        ],
+        "image": "img44.png"
+    },
+    "45": {
+        "question": "Question45",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-1", "next": "60"},
+            {"text": "Option2", "action": "-2a", "next": "61"}
+        ],
+        "image": "img45.png"
+    },
+    "46": {
+        "question": "Question46",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-1", "next": "60"},
+            {"text": "Option2", "action": "-2a", "next": "61"}
+        ],
+        "image": "img46.png"
+    },
+    "47": {
+        "question": "Question47",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-4b", "next": "62"},
+            {"text": "Option2", "action": "-1", "next": "63"}
+        ],
+        "image": "img47.png"
+    },
+    "48": {
+        "question": "Question48",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-2a", "next": "64"},
+            {"text": "Option2", "action": "-1", "next": "65"}
+        ],
+        "image": "img48.png"
+    },
+    "49": {
+        "question": "Question49",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-3b", "next": "66"},
+            {"text": "Option2", "action": "-1", "next": "67"}
+        ],
+        "image": "img49.png"
+    },
+    "50": {
+        "question": "Question50",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-3b", "next": "66"},
+            {"text": "Option2", "action": "-1", "next": "67"}
+        ],
+        "image": "img50.png"
+    },
+    "51": {
+        "question": "Question51",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-3b", "next": "68"},
+            {"text": "Option2", "action": "-1", "next": "69"}
+        ],
+        "image": "img51.png"
+    },
+    "52": {
+        "question": "Question52",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-3b", "next": "68"},
+            {"text": "Option2", "action": "-1", "next": "69"}
+        ],
+        "image": "img52.png"
+    },
+    "53": {
+        "question": "Question53",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-3c"}
+        ],
+        "image": "img53.png"
+    },
+    "54": {
+        "question": "Question54",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-4b", "next": "71"}
+        ],
+        "image": "img54.png"
+    },
+    "55": {
+        "question": "Question55",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-4a"}
+        ],
+        "image": "img55.png"
+    },
+    "56": {
+        "question": "Question56",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-1", "next": "73"},
+            {"text": "Option2", "action": "-4a", "next": "74"}
+        ],
+        "image": "img56.png"
+    },
+    "57": {
+        "question": "Question57",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-4c"},
+            {"text": "Option2", "action": "-1"}
+        ],
+        "image": "img57.png"
+    },
+    "58": {
+        "question": "Question58",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-3d", "next": "77"},
+            {"text": "Option2", "action": "-4c", "next": "78"}
+        ],
+        "image": "img58.png"
+    },
+    "59": {
+        "question": "Question59",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-4c", "next": "79"},
+            {"text": "Option2", "action": "-6c", "next": "80"}
+        ],
+        "image": "img59.png"
+    },
+    "60": {
+        "question": "Question60",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-6a", "next": "81"},
+            {"text": "Option2", "action": "-4a", "next": "82"}
+        ],
+        "image": "img60.png"
+    },
+    "61": {
+        "question": "Question61",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-6c", "next": "83"},
+            {"text": "Option2", "action": "-4a", "next": "84"}
+        ],
+        "image": "img61.png"
+    },
+    "62": {
+        "question": "Question62",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-3a", "next": "85"}
+        ],
+        "image": "img62.png"
+    },
+    "63": {
+        "question": "Question63",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-3a", "next": "85"}
+        ],
+        "image": "img63.png"
+    },
+    "64": {
+        "question": "Question64",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-3a", "next": "85"}
+        ],
+        "image": "img64.png"
+    },
+    "65": {
+        "question": "Question65",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-3a", "next": "85"}
+        ],
+        "image": "img65.png"
+    },
+    "66": {
+        "question": "Question66",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-4c;-4d"},
+            {"text": "Option2", "action": "-1"}
+        ],
+        "image": "img66.png"
+    },
+    "67": {
+        "question": "Question67",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-3b"},
+            {"text": "Option2", "action": "-4c;-4b"}
+        ],
+        "image": "img67.png"
+    },
+    "68": {
+        "question": "Question68",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-4c;-4d"},
+            {"text": "Option2", "action": "-1"}
+        ],
+        "image": "img68.png"
+    },
+    "69": {
+        "question": "Question69",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-3b"},
+            {"text": "Option2", "action": "-4c;-4b"}
+        ],
+        "image": "img69.png"
+    },
+    "71": {
+        "question": "Question71",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-3c"},
+            {"text": "Option2", "action": "-2b"}
+        ],
+        "image": "img71.png"
+    },
+    "73": {
+        "question": "Question73",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-2b"}
+        ],
+        "image": "img73.png"
+    },
+    "74": {
+        "question": "Question74",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-1"}
+        ],
+        "image": "img67.png"
+    },
+    "77": {
+        "question": "Question77",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-1"}
+        ],
+        "image": "img77.png"
+    },
+    "78": {
+        "question": "Question78",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-1"}
+        ],
+        "image": "img78.png"
+    },
+    "79": {
+        "question": "Question79",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-1"}
+        ],
+        "image": "img79.png"
+    },
+    "80": {
+        "question": "Question80",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-1"}
+        ],
+        "image": "img80.png"
+    },
+    "81": {
+        "question": "Question81",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+4along"}
+        ],
+        "image": "img81.png"
+    },
+    "82": {
+        "question": "Question82",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+4along"}
+        ],
+        "image": "img82.png"
+    },
+    "83": {
+        "question": "Question83",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+4along"}
+        ],
+        "image": "img83.png"
+    },
+    "84": {
+        "question": "Question84",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "+4along"}
+        ],
+        "image": "img84.png"
+    },
+    "85": {
+        "question": "Question85",
+        "delay": 2000,
+        "options": [
+            {"text": "Option1", "action": "-4along"}
+        ],
+        "image": "img85.png"
     }
 }]

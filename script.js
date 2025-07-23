@@ -138,6 +138,12 @@ function showCurrentNode() {
         questionEl.textContent = node.question;
         app.appendChild(questionEl);
 
+        // === SUBTEXT ===
+        const subheaderEl = document.createElement('div');
+        subheaderEl.className = 'subheader-text';
+        subheaderEl.textContent = node.subheader;
+        app.appendChild(subheaderEl);
+
         // === OPTIONS ===
         if (node.options && node.options.length > 0) {
             const optionsDiv = document.createElement('div');

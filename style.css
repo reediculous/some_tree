@@ -1,5 +1,5 @@
 body {
-    background: #CACFD6;
+    background: #d5e0be;
     min-height: 100vh;
     margin: 0;
     font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
@@ -7,7 +7,7 @@ body {
 }
 
 #app {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 64px auto 0 auto; /* margin from the top, centered horizontally */
     display: flex;
     flex-direction: column;
@@ -15,13 +15,29 @@ body {
 }
 
 .question-text {
-    color: #01161E;
+    color: #3c7244;
     text-align: center;
     font-size: 4.5em;
     font-family: Helvetica;
     font-weight: 450;
-    letter-spacing: 0.07em;
-    margin-bottom: 60px;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    background: none;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    max-width: 90vw;
+    line-height: 1.15;
+}
+
+.subheader-text {
+    color: #3c7244;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Helvetica;
+    font-weight: 450;
+    letter-spacing: 0.1em;
+    margin-bottom: 100px;
     background: none;
     box-shadow: none;
     border: none;
@@ -33,11 +49,11 @@ body {
 .option-btn {
     display: inline-block;
     color: #CACFD6;
-    background: #71697a;
+    background: #3c7244;
     border: none;
-    border-radius: 10px;
+    border-radius: 30px;
     font-family: inherit;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.1em;
     font-size: 1.6em;
     font-weight: 400;
     width: 330px;    /* Fixed width */
@@ -60,7 +76,8 @@ body {
 }
 
 .option-btn:hover, .option-btn:focus {
-    background: #719F93;
+    background: #cfabbb;
+    color: #CACFD6;
     box-shadow: 0 4px 16px 0 rgba(64, 199, 122, 0.05);
 }
 

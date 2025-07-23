@@ -1,8 +1,9 @@
 [{
     "1": {
-        "question": "Question1",
+        "question": "тест: какое ты дерево?",
+        "subheader": "для игрушечного глокеншпиля, кастаньет и трубки вау-вау",
         "options": [
-            {"text": "Option1", "action": "+1", "next": "2"}
+            {"text": "давайте исполним", "action": "+1", "next": "2"}
         ],
         "image": "img1.png"
     },

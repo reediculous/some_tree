@@ -1,5 +1,5 @@
-const SCENARIO_URL = '/some_tree/scenarios/node.json';
-const SOUNDS_DIR = '/some_tree/sounds/';
+const SCENARIO_URL = 'scenarios/node.json';
+const SOUNDS_DIR = 'sounds/';
 
 const app = document.getElementById('app');
 
@@ -125,32 +125,23 @@ function showCurrentNode() {
         const img = document.createElement('img');
         img.src = `/some_tree/images/${node.image}`;
         img.alt = '';
-        img.style.maxWidth = "300px";
-        img.style.display = "block";
-        img.style.margin = "1em auto";
         app.appendChild(img);
     }
 
     const questionEl = document.createElement('div');
     questionEl.className = 'question-text';
     questionEl.textContent = node.question;
-    questionEl.style.fontWeight = "bold";
-    questionEl.style.fontSize = "1.2em";
-    questionEl.style.margin = "1em 0";
     app.appendChild(questionEl);
 
     if (node.options && node.options.length > 0) {
         const optionsDiv = document.createElement('div');
         optionsDiv.style.display = "flex";
         optionsDiv.style.flexDirection = "column";
-        optionsDiv.style.gap = "1em";
 
         node.options.forEach(option => {
             const btn = document.createElement('button');
             btn.className = 'option-btn';
             btn.textContent = option.text;
-            btn.style.fontSize = "1em";
-            btn.style.padding = "0.7em 1.2em";
             btn.onclick = () => {
                 // SYNC NEW AUDIO TO ACTIVE LOOPER, IF EXISTS
                 if (option.action) {
@@ -208,13 +199,20 @@ function showCurrentNode() {
 
 function showEndState() {
     app.innerHTML = "";
-    const finishedDiv = document.createElement('div');
-    finishedDiv.textContent = "Конец";
-    finishedDiv.style.fontWeight = "bold";
-    finishedDiv.style.fontSize = "1.3em";
-    finishedDiv.style.margin = "2em";
-    finishedDiv.style.textAlign = "center";
-    app.appendChild(finishedDiv);
+
+    const creditsDiv = document.createElement('div');
+    creditsDiv.className = 'end-credits';
+
+    creditsDiv.innerHTML = `
+        <div class="credit-item">
+            Идея и музыка: <a href="https://vk.com/buongiorno001" target="_blank" rel="noopener" class="credit-link">Софья Филянина</a>
+        </div>
+        <div class="credit-item">
+            Запрограммировал: <a href="https://vk.com/nizamovdanil" target="_blank" rel="noopener" class="credit-link">Данил Низамов</a>
+        </div>
+    `;
+
+    app.appendChild(creditsDiv);
 }
 
 start();

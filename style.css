@@ -1,172 +1,107 @@
-* {
+body {
+    background: #CACFD6;
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px 20px;
-    color: #e0e0e0;
-}
-
 #app {
-    max-width: 600px;
-    width: 100%;
+    max-width: 800px;
+    margin: 64px auto 0 auto; /* margin from the top, centered horizontally */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
 }
 
-button {
-    background: rgba(128, 128, 128, 0.15);
-    border: 2px solid rgba(160, 160, 160, 0.3);
-    border-radius: 12px;
-    padding: 20px 40px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #d0d0d0;
+.question-text {
+    color: #01161E;
+    text-align: center;
+    font-size: 4.5em;
+    font-family: Helvetica;
+    font-weight: 450;
+    letter-spacing: 0.07em;
+    margin-bottom: 60px;
+    background: none;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    max-width: 90vw;
+    line-height: 1.15;
+}
+
+.option-btn {
+    display: inline-block;
+    color: #CACFD6;
+    background: #71697a;
+    border: none;
+    border-radius: 10px;
+    font-family: inherit;
+    letter-spacing: 0.07em;
+    font-size: 1.6em;
+    font-weight: 400;
+    width: 330px;    /* Fixed width */
+    height: 70px;    /* Fixed height */
+    margin: 0 auto;
+    margin-bottom: 22px;
     cursor: pointer;
-    min-width: 200px;
-    position: relative;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-    /* 3D effect */
-    box-shadow:
-        0 8px 16px rgba(0, 0, 0, 0.3),
-        0 4px 8px rgba(0, 0, 0, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.2);
-
-    /* Button appearance animation */
-    opacity: 0;
-    transform: translateY(20px) scale(0.9);
-    animation: buttonAppear 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    text-align: center;
+    vertical-align: middle;
+    transition: background 0.18s, box-shadow 0.15s;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+    outline: none;
+    overflow: hidden;
+    white-space: normal;
+    padding: 0 18px; /* in case text is long, allow two lines */
 }
 
-@keyframes buttonAppear {
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
+.option-btn:last-child {
+    margin-bottom: 0;
+}
+
+.option-btn:hover, .option-btn:focus {
+    background: #719F93;
+    box-shadow: 0 4px 16px 0 rgba(64, 199, 122, 0.05);
+}
+
+.end-credits {
+    color: #01161E;
+    text-align: center;
+    font-size: 2.2em;
+    font-family: Helvetica;
+    font-weight: 450;
+    letter-spacing: 0.07em;
+    margin-top: 60px;
+    line-height: 1.6;
+}
+
+.credit-item {
+    margin-bottom: 30px;
+}
+
+.credit-item:last-child {
+    margin-bottom: 0;
+}
+
+.credit-link {
+    color: #01161E;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.credit-link:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+    .end-credits {
+        font-size: 1.4em;
+        margin-top: 40px;
     }
-}
 
-/* Play Button Styles */
-
-.play-btn::before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url('/some_tree/icons/play.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 12px;
-    vertical-align: middle;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-
-.play-btn:hover {
-    background: rgba(76, 175, 80, 0.25);
-    border-color: rgba(76, 175, 80, 0.6);
-    box-shadow:
-        0 12px 24px rgba(0, 0, 0, 0.4),
-        0 6px 12px rgba(0, 0, 0, 0.3),
-        0 0 20px rgba(76, 175, 80, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-}
-
-.play-btn:hover::before {
-    opacity: 1;
-}
-
-.stop-btn::before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url('/some_tree/icons/stop.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 12px;
-    vertical-align: middle;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
-}
-
-.stop-btn:hover {
-    background: rgba(244, 67, 54, 0.25);
-    border-color: rgba(244, 67, 54, 0.6);
-    box-shadow:
-        0 12px 24px rgba(0, 0, 0, 0.4),
-        0 6px 12px rgba(0, 0, 0, 0.3),
-        0 0 20px rgba(244, 67, 54, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-}
-
-.stop-btn:hover::before {
-    opacity: 1;
-}
-
-/* Choose Button Styles */
-
-.choose-btn:hover {
-    background: rgba(63, 81, 181, 0.25);
-    border-color: rgba(63, 81, 181, 0.6);
-    box-shadow:
-        0 12px 24px rgba(0, 0, 0, 0.4),
-        0 6px 12px rgba(0, 0, 0, 0.3),
-        0 0 20px rgba(63, 81, 181, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
-}
-
-button:active {
-    transform: translateY(0) scale(1.02);
-    box-shadow:
-        0 4px 8px rgba(0, 0, 0, 0.3),
-        0 2px 4px rgba(0, 0, 0, 0.2),
-        inset 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* Container for choose buttons */
-div {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    margin: 1em 0;
-}
-
-/* Stagger animation for multiple buttons */
-button:nth-child(1) { animation-delay: 0s; }
-button:nth-child(2) { animation-delay: 0.1s; }
-button:nth-child(3) { animation-delay: 0.2s; }
-button:nth-child(4) { animation-delay: 0.3s; }
-button:nth-child(5) { animation-delay: 0.4s; }
-
-/* Subtle background pattern */
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image:
-        radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.02) 0%, transparent 50%),
-        radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.02) 0%, transparent 50%);
-    pointer-events: none;
-    z-index: -1;
+    .credit-item {
+        margin-bottom: 20px;
+    }
 }

@@ -217,7 +217,7 @@
         "question": "Question26",
         "delay": 2000,
         "options": [
-            {"text": "Option1", "action": "+5b;-6b", "next": "42"}
+            {"text": "Option1", "action": "+5b;-6b;-3d", "next": "42"}
         ],
         "image": "img26.png"
     },
@@ -466,7 +466,7 @@
         "question": "Question56",
         "delay": 2000,
         "options": [
-            {"text": "Option1", "action": "-3d", "next": "73"},
+            {"text": "Option1", "action": "-1", "next": "73"},
             {"text": "Option2", "action": "-4a", "next": "74"}
         ],
         "image": "img56.png"

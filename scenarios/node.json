@@ -9,934 +9,935 @@
         "final": false
     },
     "2": {
-        "question": "Question2",
-        "delay": 2000,
+        "question": "вам хорошо сейчас?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+2a", "next": "3"},
-            {"text": "Option2", "action": "+2b", "next": "4"}
+            {"text": "да", "action": "+2a", "next": "3"},
+            {"text": "нет, не очень", "action": "+2b", "next": "4"}
         ],
         "image": "img2.png",
         "final": false
     },
     "3": {
-        "question": "Question3",
-        "delay": 2000,
+        "question": "закройте глаза и представьте себе красивую снежинку.",
+        "subheader": "сколько у нее лучей?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+3a", "next": "5"},
-            {"text": "Option2", "action": "+3b", "next": "6"}
+            {"text": "шесть или больше", "action": "+3a", "next": "5"},
+            {"text": "я не знаю", "action": "+3b", "next": "6"}
         ],
         "image": "img3.png",
         "final": false
     },
     "4": {
-        "question": "Question4",
-        "delay": 2000,
+        "question": "как вы думаете, вы знаете, что такое красота?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+3c", "next": "7"},
-            {"text": "Option2", "action": "+3d", "next": "8"}
+            {"text": "да", "action": "+3c", "next": "7"},
+            {"text": "нет", "action": "+3d", "next": "8"}
         ],
         "image": "img4.png",
         "final": false
     },
     "5": {
-        "question": "Question5",
-        "delay": 2000,
+        "question": "в имени вашей первой любви была буква А?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+4along", "next": "9"},
-            {"text": "Option2", "action": "+4b", "next": "10"}
+            {"text": "да", "action": "+4along", "next": "9"},
+            {"text": "нет", "action": "+4b", "next": "10"}
         ],
         "image": "img5.png",
         "final": false
     },
     "6": {
-        "question": "Question6",
-        "delay": 2000,
+        "question": "вспомните луну, когда вы видели ее в последний раз. какая она была?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+4c", "next": "11"},
-            {"text": "Option2", "action": "+4d", "next": "12"}
+            {"text": "белая", "action": "+4c", "next": "11"},
+            {"text": "другая", "action": "+4d", "next": "12"}
         ],
         "image": "img6.png",
         "final": false
     },
     "7": {
-        "question": "Question7",
-        "delay": 2000,
+        "question": "она объективна или субъективна?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+4a", "next": "13"},
-            {"text": "Option2", "action": "+4b", "next": "14"}
+            {"text": "объективна", "action": "+4a", "next": "13"},
+            {"text": "субъективна", "action": "+4b", "next": "14"}
         ],
         "image": "img7.png",
         "final": false
     },
     "8": {
-        "question": "Question8",
-        "delay": 2000,
+        "question": "я тоже. давайте поменяем что-нибудь в этой пьесе. ",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+4a", "next": "15"},
-            {"text": "Option2", "action": "+4c", "next": "16"}
+            {"text": "давайте", "action": "+4a", "next": "15"},
+            {"text": "нет, оставим все как есть", "action": "+4c", "next": "16"}
         ],
         "image": "img8.png",
         "final": false
     },
     "9": {
-        "question": "Question9",
-        "delay": 2000,
+        "question": "поверните голову и рассмотрите объект слева от себя.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+4a;-4along", "next": "17"}
+            {"text": "рассмотрел", "action": "+4a;-4along", "next": "17"}
         ],
         "image": "img9.png",
         "final": false
     },
     "10": {
-        "question": "Question10",
-        "delay": 2000,
+        "question": "вспомните, как пахнет апельсин.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+4along", "next": "18"}
+            {"text": "забавно", "action": "+4along", "next": "18"}
         ],
         "image": "img10.png",
         "final": false
     },
     "11": {
-        "question": "Question11",
-        "delay": 2000,
+        "question": "арабские буквы делятся на солнечные и лунные. поэтично, правда?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+4d", "next": "19"}
+            {"text": "очень поэтично", "action": "+4d", "next": "19"}
         ],
         "image": "img11.png",
         "final": false
     },
     "12": {
-        "question": "Question12",
-        "delay": 2000,
+        "question": "луна может казаться красной в двух основных случаях: во время лунного затмения и когда она находится низко над горизонтом. ",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+4c", "next": "20"}
+            {"text": "спасибо, буду знать", "action": "+4c", "next": "20"}
         ],
         "image": "img12.png",
         "final": false
     },
     "13": {
-        "question": "Question13",
-        "delay": 2000,
+        "question": "вам нравятся овалы?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+6a", "next": "21"},
-            {"text": "Option2", "action": "+5c", "next": "22"}
+            {"text": "я с детства рисую исключительно углы", "action": "+6a", "next": "21"},
+            {"text": "овалы прекрасны", "action": "+5c", "next": "22"}
         ],
         "image": "img13.png",
         "final": false
     },
     "14": {
-        "question": "Question14",
-        "delay": 2000,
+        "question": "???",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+5c", "next": "23"},
-            {"text": "Option2", "action": "+5b", "next": "24"}
+            {"text": "!!!", "action": "+5c", "next": "23"},
+            {"text": "...", "action": "+5b", "next": "24"}
         ],
         "image": "img14.png",
         "final": false
     },
     "15": {
-        "question": "Question15",
-        "delay": 2000,
+        "question": "послушайте. вам нравится?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+6a", "next": "25"},
-            {"text": "Option2", "action": "+6b", "next": "26"}
+            {"text": "да", "action": "+6a", "next": "25"},
+            {"text": "не особо", "action": "+6b", "next": "26"}
         ],
         "image": "img15.png",
         "final": false
     },
     "16": {
-        "question": "Question16",
-        "delay": 2000,
+        "question": "увы, она все равно должна измениться. ",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+5c", "next": "27"},
-            {"text": "Option2", "action": "+5a", "next": "28"}
+            {"text": "ладно", "action": "+5c", "next": "27"},
+            {"text": "ты меня обманула!", "action": "+5a", "next": "28"}
         ],
         "image": "img16.png",
         "final": false
     },
     "17": {
-        "question": "Question17",
-        "delay": 2000,
+        "question": "вы готовы что-то менять?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+5a;-3a", "next": "29"},
-            {"text": "Option2", "action": "+5c", "next": "30"}
+            {"text": "да", "action": "+5a;-3a", "next": "29"},
+            {"text": "нет, но приходится", "action": "+5c", "next": "30"}
         ],
         "image": "img17.png",
         "final": false
     },
     "18": {
-        "question": "Question18",
-        "delay": 2000,
+        "question": "у вас есть дети?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+5a;-3a", "next": "31"},
-            {"text": "Option2", "action": "+5c", "next": "32"}
+            {"text": "да", "action": "+5a;-3a", "next": "31"},
+            {"text": "нет", "action": "+5c", "next": "32"}
         ],
         "image": "img18.png",
         "final": false
     },
     "19": {
-        "question": "Question19",
-        "delay": 2000,
+        "question": "где бы вы хотели сейчас быть - на самом деле?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+5b;-3b", "next": "33"},
-            {"text": "Option2", "action": "+5c", "next": "34"}
+            {"text": "там, где я сейчас есть", "action": "+5b;-3b", "next": "33"},
+            {"text": "в другом месте", "action": "+5c", "next": "34"}
         ],
         "image": "img19.png",
         "final": false
     },
     "20": {
-        "question": "Question20",
-        "delay": 2000,
+        "question": "у вас есть братья или сестры?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+5a;-3b", "next": "35"},
-            {"text": "Option2", "action": "+5b;-3b", "next": "36"}
+            {"text": "да", "action": "+5a;-3b", "next": "35"},
+            {"text": "нет", "action": "+5b;-3b", "next": "36"}
         ],
         "image": "img20.png",
         "final": false
     },
     "21": {
-        "question": "Question21",
-        "delay": 2000,
+        "question": "в природе не так много углов. я подозреваю, что угол - это чисто человеческое изобретение.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+5a;-6a", "next": "37"}
+            {"text": "хвала человеческому разуму", "action": "+5a;-6a", "next": "37"}
         ],
         "image": "img21.png",
         "final": false
     },
     "22": {
-        "question": "Question22",
-        "delay": 2000,
+        "question": "а сможете представить себе пьесу в форме овала?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+6c;-5c", "next": "38"}
+            {"text": "пожалуйста, хватит эксприментов с формой", "action": "+6c;-5c", "next": "38"}
         ],
         "image": "img22.png",
         "final": false
     },
     "23": {
-        "question": "Question23",
-        "delay": 2000,
+        "question": "этого вопроса не существует. придумайте его сами.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+6c;-5c", "next": "39"}
+            {"text": "придумал", "action": "+6c;-5c", "next": "39"}
         ],
         "image": "img23.png",
         "final": false
     },
     "24": {
-        "question": "Question24",
-        "delay": 2000,
+        "question": "вы заметили, как сочетание неозвученных символов тем не менее рождает подобие звука у вас в голове?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+6b;-5b", "next": "40"}
+            {"text": "!!!", "action": "+6b;-5b", "next": "40"}
         ],
         "image": "img24.png",
         "final": false
     },
     "25": {
-        "question": "Question25",
-        "delay": 2000,
+        "question": "так вы все-таки знаете, что такое красота!",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+5a;-6a;-3d", "next": "41"}
+            {"text": "выходит, что так", "action": "+5a;-6a;-3d", "next": "41"}
         ],
         "image": "img25.png",
         "final": false
     },
     "26": {
-        "question": "Question26",
-        "delay": 2000,
+        "question": "мне тоже.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+5b;-6b;-3d", "next": "42"}
+            {"text": "понимаю", "action": "+5b;-6b;-3d", "next": "42"}
         ],
         "image": "img26.png",
         "final": false
     },
     "27": {
-        "question": "Question27",
-        "delay": 2000,
+        "question": "и мне совершенно не жаль.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+6c;-5c", "next": "43"}
+            {"text": "хорошо", "action": "+6c;-5c", "next": "43"}
         ],
         "image": "img27.png",
         "final": false
     },
     "28": {
-        "question": "Question28",
-        "delay": 2000,
+        "question": "действительно!",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+6c;-5a", "next": "44"}
+            {"text": "больше так не делай", "action": "+6c;-5a", "next": "44"}
         ],
         "image": "img28.png",
         "final": false
     },
     "29": {
-        "question": "Question29",
-        "delay": 2000,
+        "question": "поменяем еще кое-что?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+6a;-5a", "next": "45"}
+            {"text": "давайте", "action": "+6a;-5a", "next": "45"}
         ],
         "image": "img29.png",
         "final": false
     },
     "30": {
-        "question": "Question30",
-        "delay": 2000,
+        "question": "тогда поменяем кое-что?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+6c;-5c", "next": "46"}
+            {"text": "давайте", "action": "+6c;-5c", "next": "46"}
         ],
         "image": "img30.png",
         "final": false
     },
     "31": {
-        "question": "Question31",
-        "delay": 2000,
+        "question": "как хорошо!",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+6a;-5a", "next": "47"}
+            {"text": "и правда", "action": "+6a;-5a", "next": "47"}
         ],
         "image": "img31.png",
         "final": false
     },
     "32": {
-        "question": "Question32",
-        "delay": 2000,
+        "question": "но у вас наверняка есть желание нажать на эту кнопку.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+6c;-5c", "next": "48"}
+            {"text": "жмяк", "action": "+6c;-5c", "next": "48"}
         ],
         "image": "img32.png",
         "final": false
     },
     "33": {
-        "question": "Question33",
-        "delay": 2000,
+        "question": "прекрасно. сконцентируйтесь на ощущениях на кончиках пальцев.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+6b;-5b", "next": "49"}
+            {"text": "ух ты, у меня есть руки", "action": "+6b;-5b", "next": "49"}
         ],
         "image": "img33.png",
         "final": false
     },
     "34": {
-        "question": "Question34",
-        "delay": 2000,
+        "question": "почему так?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+6c;-5c", "next": "50"}
+            {"text": "у меня есть ответ", "action": "+6c;-5c", "next": "50"}
         ],
         "image": "img34.png",
         "final": false
     },
     "35": {
-        "question": "Question35",
-        "delay": 2000,
+        "question": "вам повезло.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+6a;-5a", "next": "51"}
+            {"text": "может быть", "action": "+6a;-5a", "next": "51"}
         ],
         "image": "img35.png",
         "final": false
     },
     "36": {
-        "question": "Question36",
-        "delay": 2000,
+        "question": "вам повезло.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+6b;-5b", "next": "52"}
+            {"text": "с какой-то стороны это так", "action": "+6b;-5b", "next": "52"}
         ],
         "image": "img36.png",
         "final": false
     },
     "37": {
-        "question": "Question37",
-        "delay": 2000,
+        "question": "задержите дыхание и послушайте свое сердце.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-1", "next": "53"}
+            {"text": "knock knock", "action": "-1", "next": "53"}
         ],
         "image": "img37.png",
         "final": false
     },
     "38": {
-        "question": "Question38",
-        "delay": 2000,
+        "question": "закройте глаза и посидите в темноте.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-1", "next": "53"}
+            {"text": "эта темнота ненастоящая", "action": "-1", "next": "53"}
         ],
         "image": "img38.png",
         "final": false
     },
     "39": {
-        "question": "Question39",
-        "delay": 2000,
+        "question": "а теперь ответьте на него.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-1", "next": "54"}
+            {"text": "ответил", "action": "-1", "next": "54"}
         ],
         "image": "img39.png",
         "final": false
     },
     "40": {
-        "question": "Question40",
-        "delay": 2000,
+        "question": "этого вопроса не существует. придумайте его сами.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-1", "next": "54"}
+            {"text": "придумал", "action": "-1", "next": "54"}
         ],
         "image": "img40.png",
         "final": false
     },
     "41": {
-        "question": "Question41",
-        "delay": 2000,
+        "question": "представьте себе лицо случайного человека.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-6a", "next": "55"}
+            {"text": "представил", "action": "-6a", "next": "55"}
         ],
         "image": "img41.png",
         "final": false
     },
     "42": {
-        "question": "Question42",
-        "delay": 2000,
+        "question": "слишком шумно...",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-5b", "next": "56"}
+            {"text": "сделаем потише", "action": "-5b", "next": "56"}
         ],
         "image": "img42.png",
         "final": false
     },
     "43": {
-        "question": "Question43",
-        "delay": 2000,
+        "question": "вы больше любите день или ночь?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-3d", "next": "57"},
-            {"text": "Option2", "action": "-2b", "next": "58"}
+            {"text": "день", "action": "-3d", "next": "57"},
+            {"text": "ночь", "action": "-2b", "next": "58"}
         ],
         "image": "img43.png",
         "final": false
     },
     "44": {
-        "question": "Question44",
-        "delay": 2000,
+        "question": "подумайте о самом прекрасном месте в мире",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-3d", "next": "59"}
+            {"text": "думаю", "action": "-3d", "next": "59"}
         ],
         "image": "img44.png",
         "final": false
     },
     "45": {
-        "question": "Question45",
-        "delay": 2000,
+        "question": "вы убрали мой любимый фрагмент...",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-1", "next": "60"},
-            {"text": "Option2", "action": "-2a", "next": "61"}
+            {"text": "мне он тоже нравился", "action": "-1", "next": "60"},
+            {"text": "в нем не было ничего особенного", "action": "-2a", "next": "61"}
         ],
         "image": "img45.png",
         "final": false
     },
     "46": {
-        "question": "Question46",
-        "delay": 2000,
+        "question": "стало тише...",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-1", "next": "60"},
-            {"text": "Option2", "action": "-2a", "next": "61"}
+            {"text": "давайте прислушаемся", "action": "-1", "next": "60"},
+            {"text": "давайте двинемся дальше", "action": "-2a", "next": "61"}
         ],
         "image": "img46.png",
         "final": false
     },
     "47": {
-        "question": "Question47",
-        "delay": 2000,
+        "question": "вы серьезный человек?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-4b", "next": "62"},
-            {"text": "Option2", "action": "-1", "next": "63"}
+            {"text": "очень", "action": "-4b", "next": "62"},
+            {"text": "не совсем", "action": "-1", "next": "63"}
         ],
         "image": "img47.png",
         "final": false
     },
     "48": {
-        "question": "Question48",
-        "delay": 2000,
+        "question": "вы уверены, что все делаете правильно?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-2a", "next": "64"},
-            {"text": "Option2", "action": "-1", "next": "65"}
+            {"text": "да", "action": "-2a", "next": "64"},
+            {"text": "не всегда есть такая уверенность", "action": "-1", "next": "65"}
         ],
         "image": "img48.png",
         "final": false
     },
     "49": {
-        "question": "Question49",
-        "delay": 2000,
+        "question": "вы хотели бы жить вечно?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-3b", "next": "66"},
-            {"text": "Option2", "action": "-1", "next": "67"}
+            {"text": "да", "action": "-3b", "next": "66"},
+            {"text": "нет", "action": "-1", "next": "67"}
         ],
         "image": "img49.png",
         "final": false
     },
     "50": {
-        "question": "Question50",
-        "delay": 2000,
+        "question": "вы счастливый человек?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-3b", "next": "66"},
-            {"text": "Option2", "action": "-1", "next": "67"}
+            {"text": "абсолютно", "action": "-3b", "next": "66"},
+            {"text": "не совсем", "action": "-1", "next": "67"}
         ],
         "image": "img50.png",
         "final": false
     },
     "51": {
-        "question": "Question51",
-        "delay": 2000,
+        "question": "выберите цвет, который нравится вам больше:",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-3b", "next": "68"},
-            {"text": "Option2", "action": "-1", "next": "69"}
+            {"text": "красный", "action": "-3b", "next": "68"},
+            {"text": "бирюзовый", "action": "-1", "next": "69"}
         ],
         "image": "img51.png",
         "final": false
     },
     "52": {
-        "question": "Question52",
-        "delay": 2000,
+        "question": "выберите, кто вам больше нравится:",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-3b", "next": "68"},
-            {"text": "Option2", "action": "-1", "next": "69"}
+            {"text": "бах", "action": "-3b", "next": "68"},
+            {"text": "бетховен", "action": "-1", "next": "69"}
         ],
         "image": "img52.png",
         "final": false
     },
     "53": {
-        "question": "Question53",
-        "delay": 2000,
+        "question": "возможно, сейчас вы делаете то, что от вас просят. зачем? сделайте то, что хотите.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-3c", "next": "70"}
+            {"text": "хорошо", "action": "-3c", "next": "70"}
         ],
         "image": "img53.png",
         "final": false
     },
     "54": {
-        "question": "Question54",
-        "delay": 2000,
+        "question": "это неправильный ответ. придумайте другой.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-4b", "next": "71"}
+            {"text": "ладно, вот другой ответ", "action": "-4b", "next": "71"}
         ],
         "image": "img54.png",
         "final": false
     },
     "55": {
-        "question": "Question55",
-        "delay": 2000,
+        "question": "если вы его знаете, подумайте о нем. если нет, придумайте ему имя. кто это?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-4a", "next": "72"}
+            {"text": "я знаю, кто это", "action": "-4a", "next": "72"}
         ],
         "image": "img55.png",
         "final": false
     },
     "56": {
-        "question": "Question56",
-        "delay": 2000,
+        "question": "все еще шумно. что уберем?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-1", "next": "73"},
-            {"text": "Option2", "action": "-4a", "next": "74"}
+            {"text": "шуршание", "action": "-1", "next": "73"},
+            {"text": "тиканье", "action": "-4a", "next": "74"}
         ],
         "image": "img56.png",
         "final": false
     },
     "57": {
-        "question": "Question57",
-        "delay": 2000,
+        "question": "а получать подарки вам нравится?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-4c", "next": "75"},
-            {"text": "Option2", "action": "-1", "next": "76"}
+            {"text": "да", "action": "-4c", "next": "75"},
+            {"text": "не всегда", "action": "-1", "next": "76"}
         ],
         "image": "img57.png",
         "final": false
     },
     "58": {
-        "question": "Question58",
-        "delay": 2000,
+        "question": "не потому ли, что вам нравится быть наедине с собой?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-3d", "next": "77"},
-            {"text": "Option2", "action": "-4c", "next": "78"}
+            {"text": "да, поэтому", "action": "-3d", "next": "77"},
+            {"text": "по другой причине", "action": "-4c", "next": "78"}
         ],
         "image": "img58.png",
         "final": false
     },
     "59": {
-        "question": "Question59",
-        "delay": 2000,
+        "question": "там много растений?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-4c", "next": "79"},
-            {"text": "Option2", "action": "-6c", "next": "80"}
+            {"text": "довольно много", "action": "-4c", "next": "79"},
+            {"text": "не совсем", "action": "-6c", "next": "80"}
         ],
         "image": "img59.png",
         "final": false
     },
     "60": {
-        "question": "Question60",
-        "delay": 2000,
+        "question": "эта пьеса развивается так, как вам угодно.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-6a", "next": "81"},
-            {"text": "Option2", "action": "-4a", "next": "82"}
+            {"text": "это правда", "action": "-6a", "next": "81"},
+            {"text": "это неправда", "action": "-4a", "next": "82"}
         ],
         "image": "img60.png",
         "final": false
     },
     "61": {
-        "question": "Question61",
-        "delay": 2000,
+        "question": "вы больше любите слушать или действовать?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-6c", "next": "83"},
-            {"text": "Option2", "action": "-4a", "next": "84"}
+            {"text": "слушать", "action": "-6c", "next": "83"},
+            {"text": "действовать", "action": "-4a", "next": "84"}
         ],
         "image": "img61.png",
         "final": false
     },
     "62": {
-        "question": "Question62",
-        "delay": 2000,
+        "question": "не могу сказать того же о себе.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-3a", "next": "85"}
+            {"text": "это заметно", "action": "-3a", "next": "85"}
         ],
         "image": "img62.png",
         "final": false
     },
     "63": {
-        "question": "Question63",
-        "delay": 2000,
+        "question": "в этом мы с вами похожи.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-3a", "next": "85"}
+            {"text": "чувствуется.", "action": "-3a", "next": "85"}
         ],
         "image": "img63.png",
         "final": false
     },
     "64": {
-        "question": "Question64",
-        "delay": 2000,
+        "question": "вспомните один раз, когда вы ошиблись.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-3a", "next": "85"}
+            {"text": "было дело", "action": "-3a", "next": "85"}
         ],
         "image": "img64.png",
         "final": false
     },
     "65": {
-        "question": "Question65",
-        "delay": 2000,
+        "question": "вспомните один раз, когда вы оказались правы.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-3a", "next": "85"}
+            {"text": "было такое", "action": "-3a", "next": "85"}
         ],
         "image": "img65.png",
         "final": false
     },
     "66": {
-        "question": "Question66",
-        "delay": 2000,
+        "question": "а коровы вам нравятся?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-4c;-4d", "next": "86"},
-            {"text": "Option2", "action": "-1", "next": "87"}
+            {"text": "да, они милые", "action": "-4c;-4d", "next": "86"},
+            {"text": "не питаю к коровам никаких особенных чувств", "action": "-1", "next": "87"}
         ],
         "image": "img66.png",
         "final": false
     },
     "67": {
-        "question": "Question67",
-        "delay": 2000,
+        "question": "а если бы у вас была такая возможность? на самом деле.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-3b", "next": "88"},
-            {"text": "Option2", "action": "-4c;-4b", "next": "89"}
+            {"text": "тогда давайте", "action": "-3b", "next": "88"},
+            {"text": "нет, все равно не надо", "action": "-4c;-4b", "next": "89"}
         ],
         "image": "img67.png",
         "final": false
     },
     "68": {
-        "question": "Question68",
-        "delay": 2000,
+        "question": "почему так?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-4c;-4d", "next": "90"},
-            {"text": "Option2", "action": "-1", "next": "91"}
+            {"text": "да просто так", "action": "-4c;-4d", "next": "90"},
+            {"text": "у меня есть история, объясняющая это", "action": "-1", "next": "91"}
         ],
         "image": "img68.png",
         "final": false
     },
     "69": {
-        "question": "Question69",
-        "delay": 2000,
+        "question": "почему вы выбрали этот ответ?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-3b", "next": "92"},
-            {"text": "Option2", "action": "-4c;-4b", "next": "93"}
+            {"text": "да просто так", "action": "-3b", "next": "92"},
+            {"text": "есть причина", "action": "-4c;-4b", "next": "93"}
         ],
         "image": "img69.png",
         "final": false
     },
     "70": {
-        "question": "Question70",
-        "delay": 2000,
+        "question": "хотите закончить?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "101"}
+            {"text": "хочу", "next": "101"}
         ],
         "image": "img70.png",
         "final": false
     },
     "71": {
-        "question": "Question71",
-        "delay": 2000,
+        "question": "вы сейчас касаетесь ногами пола?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-3c", "next": "94"},
-            {"text": "Option2", "action": "-2b", "next": "95"}
+            {"text": "да, мои ноги на земле", "action": "-3c", "next": "94"},
+            {"text": "нет, они в воздухе", "action": "-2b", "next": "95"}
         ],
         "image": "img71.png",
         "final": false
     },
     "72": {
-        "question": "Question72",
-        "delay": 2000,
+        "question": "мысленно скажите ему пару слов.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "102"}
+            {"text": "сказал", "next": "102"}
         ],
         "image": "img72.png",
         "final": false
     },
     "73": {
-        "question": "Question73",
-        "delay": 2000,
+        "question": "теперь можно расслышать каждый звук.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-2b", "next": "96"}
+            {"text": "давайте послушаем", "action": "-2b", "next": "96"}
         ],
         "image": "img73.png",
         "final": false
     },
     "74": {
-        "question": "Question74",
-        "delay": 2000,
+        "question": "так-то лучше.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-1", "next": "97"}
+            {"text": "уберем что-нибудь еще", "action": "-1", "next": "97"}
         ],
         "image": "img67.png",
         "final": false
     },
     "75": {
-        "question": "Question75",
-        "delay": 2000,
+        "question": "следующий день преподнесет вам подарок. постарайтесь не пропустить его.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "103"}
+            {"text": "хорошо, буду знать", "next": "103"}
         ],
         "image": "img75.png",
         "final": false
     },
     "76": {
-        "question": "Question76",
-        "delay": 2000,
+        "question": "я думаю, что дарить подарки намного приятнее.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "104"}
+            {"text": "хорошо, допустим", "next": "104"}
         ],
         "image": "img76.png",
         "final": false
     },
     "77": {
-        "question": "Question77",
-        "delay": 2000,
+        "question": "возможно, вам этого не хватает.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-1", "next": "98"}
+            {"text": "может быть", "action": "-1", "next": "98"}
         ],
         "image": "img77.png",
         "final": false
     },
     "78": {
-        "question": "Question78",
-        "delay": 2000,
+        "question": "подумайте об этой причине.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-1", "next": "98"}
+            {"text": "думаю", "action": "-1", "next": "98"}
         ],
         "image": "img78.png",
         "final": false
     },
     "79": {
-        "question": "Question79",
-        "delay": 2000,
+        "question": "представьте, как они звучат.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-1", "next": "98"}
+            {"text": "представляю", "action": "-1", "next": "98"}
         ],
         "image": "img79.png",
         "final": false
     },
     "80": {
-        "question": "Question80",
-        "delay": 2000,
+        "question": "представьте, как это место выглядит ночью.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-1", "next": "98"}
+            {"text": "представляю", "action": "-1", "next": "98"}
         ],
         "image": "img80.png",
         "final": false
     },
     "81": {
-        "question": "Question81",
-        "delay": 2000,
+        "question": "это была неправда. щелкните, чтобы она вошла в следующую, заранее придуманную фазу.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+4along", "next": "99"}
+            {"text": "выбор - это иллюзия", "action": "+4along", "next": "99"}
         ],
         "image": "img81.png",
         "final": false
     },
     "82": {
-        "question": "Question82",
-        "delay": 2000,
+        "question": "вы правы. я все еще контролирую процесс.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+4along", "next": "99"}
+            {"text": "поддаться контролю", "action": "+4along", "next": "99"}
         ],
         "image": "img82.png",
         "final": false
     },
     "83": {
-        "question": "Question83",
-        "delay": 2000,
+        "question": "тогда слушайте.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+4along", "next": "99"}
+            {"text": "хорошо", "action": "+4along", "next": "99"}
         ],
         "image": "img83.png",
         "final": false
     },
     "84": {
-        "question": "Question84",
-        "delay": 2000,
+        "question": "тогда действуйте.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "+4along", "next": "99"}
+            {"text": "действую", "action": "+4along", "next": "99"}
         ],
         "image": "img84.png",
         "final": false
     },
     "85": {
-        "question": "Question85",
-        "delay": 2000,
+        "question": "знаете анекдот про моцарта и метроном?",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "action": "-4along", "next": "100"}
+            {"text": "что это блин тикает?", "action": "-4along", "next": "100"}
         ],
         "image": "img85.png",
         "final": false
     },
     "86": {
-        "question": "Question86",
-        "delay": 2000,
+        "question": "иногда приходится выбирать",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "105"}
+            {"text": "единственный возможный вариант.", "next": "105"}
         ],
         "image": "img86.png",
         "final": false
     },
     "87": {
-        "question": "Question87",
-        "delay": 2000,
+        "question": "они к вам тоже.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "106"}
+            {"text": "хорошо, буду жить с этим", "next": "106"}
         ],
         "image": "img87.png",
         "final": false
     },
     "88": {
-        "question": "Question88",
-        "delay": 2000,
+        "question": "вам будет грустно...",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "107"}
+            {"text": "я знаю", "next": "107"}
         ],
         "image": "img88.png",
         "final": false
     },
     "89": {
-        "question": "Question89",
-        "delay": 2000,
+        "question": "и правильно.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "108"}
+            {"text": "да", "next": "108"}
         ],
         "image": "img89s.png",
         "final": false
     },
     "90": {
-        "question": "Question90",
-        "delay": 2000,
+        "question": "ничего не бывает просто так.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "109"}
+            {"text": "сомнительное утверждение", "next": "109"}
         ],
         "image": "img90.png",
         "final": false
     },
     "91": {
-        "question": "Question91",
-        "delay": 2000,
+        "question": "вспомните любую другую историю, которая с вами случилась.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "110"}
+            {"text": "было дело", "next": "110"}
         ],
         "image": "img91.png",
         "final": false
     },
     "92": {
-        "question": "Question92",
-        "delay": 2000,
+        "question": "тогда кликните сюда - просто так.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "111"}
+            {"text": "это можно", "next": "111"}
         ],
         "image": "img92.png",
         "final": false
     },
     "93": {
-        "question": "Question93",
-        "delay": 2000,
+        "question": "забавно, что мы все сотканы из историй. у этой пьесы она тоже есть.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "112"}
+            {"text": "но я просто хотел узнать, какое я дерево...", "next": "112"}
         ],
         "image": "img93.png",
         "final": false
     },
     "94": {
-        "question": "Question94",
-        "delay": 2000,
+        "question": "почувствуйте пол под ногами.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "113"}
+            {"text": "чувствую", "next": "113"}
         ],
         "image": "img94.png",
         "final": false
     },
     "95": {
-        "question": "Question95",
-        "delay": 2000,
+        "question": "с какой-то точки зрения вы висите в воздухе.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "114"}
+            {"text": "и правда", "next": "114"}
         ],
         "image": "img95.png",
         "final": false
     },
     "96": {
-        "question": "Question96",
-        "delay": 2000,
+        "question": "уберем еще кое-что...",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "115"}
+            {"text": "давайте...", "next": "115"}
         ],
         "image": "img96.png",
         "final": false
     },
     "97": {
-        "question": "Question97",
-        "delay": 2000,
+        "question": "и еще...",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "116"}
+            {"text": "еще?", "next": "116"}
         ],
         "image": "img97.png",
         "final": false
     },
     "98": {
-        "question": "Question98",
-        "delay": 2000,
+        "question": "представьте, что вы сейчас там.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "117"}
+            {"text": "окей", "next": "117"}
         ],
         "image": "img98.png",
         "final": false
     },
     "99": {
-        "question": "Question99",
-        "delay": 2000,
+        "question": "тем не менее, именно вы решаете, когда закончить.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "118"}
+            {"text": "я хочу закончить", "next": "118"}
         ],
         "image": "img99.png",
         "final": false
     },
     "100": {
-        "question": "Question100",
-        "delay": 2000,
+        "question": "послушайте.",
+        "delay": 4000,
         "options": [
-            {"text": "Option1", "next": "119"}
+            {"text": "слушаю", "next": "119"}
         ],
         "image": "img100.png",
         "final": false
     },
     "101": {
-        "question": "Final Answer 1",
-        "subheader": "description",
+        "question": "вы - дерево, которое когда-нибудь станет книгой.",
+        "subheader": "хорошей или плохой?",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -945,8 +946,8 @@
         "final": true
     },
     "102": {
-        "question": "Final Answer 2",
-        "subheader": "description",
+        "question": "вы - ива.",
+        "subheader": "время от времени под вами случается всякое. будьте осторожны.",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -955,8 +956,8 @@
         "final": true
     },
     "103": {
-        "question": "Final Answer 3",
-        "subheader": "description",
+        "question": "вы - сакура.",
+        "subheader": "у вас прекрасный вкус. все хотят видеть ваше цветение.",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -965,8 +966,8 @@
         "final": true
     },
     "104": {
-        "question": "Final Answer 4",
-        "subheader": "description",
+        "question": "вы - не дерево вовсе.",
+        "subheader": "вы что-то совсем другое.",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -975,8 +976,8 @@
         "final": true
     },
     "105": {
-        "question": "Final Answer 5",
-        "subheader": "description",
+        "question": "вы - дуб, с которым разговаривал князь андрей.",
+        "subheader": "давно это было, правда?",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -985,8 +986,8 @@
         "final": true
     },
     "106": {
-        "question": "Final Answer 6",
-        "subheader": "description",
+        "question": "вы - тополь в яркий летний день.",
+        "subheader": "вам посвящают песни. опасайтесь случайного огня.",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -995,8 +996,8 @@
         "final": true
     },
     "107": {
-        "question": "Final Answer 7",
-        "subheader": "description",
+        "question": "вы - куст сирени.",
+        "subheader": "чье-то бедное счастье, возможно, цветет в ваших ветвях.",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -1005,8 +1006,8 @@
         "final": true
     },
     "108": {
-        "question": "Final Answer 8",
-        "subheader": "description",
+        "question": "вы - лавровое дерево.",
+        "subheader": "священное дерево аполлона. я вам завидую.",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -1015,8 +1016,8 @@
         "final": true
     },
     "109": {
-        "question": "Final Answer 9",
-        "subheader": "description",
+        "question": "вы - мангровое дерево.",
+        "subheader": "(да, они существуют.)",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -1025,8 +1026,8 @@
         "final": true
     },
     "110": {
-        "question": "Final Answer 10",
-        "subheader": "description",
+        "question": "вы - украшенная звездой рождественская ель.",
+        "subheader": "никто не спрашивает, хотите ли вы быть в центре внимания.",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -1035,8 +1036,8 @@
         "final": true
     },
     "111": {
-        "question": "Final Answer 11",
-        "subheader": "description",
+        "question": "вы - липа из песни шуберта.",
+        "subheader": "возможно, на вашей коре высечены чужие слова. но так ли это плохо?",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -1045,8 +1046,8 @@
         "final": true
     },
     "112": {
-        "question": "Final Answer 12",
-        "subheader": "description",
+        "question": "вы - ясень.",
+        "subheader": "к вам пристают с вопросами. хорошо, что они закончились.",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -1055,8 +1056,8 @@
         "final": true
     },
     "113": {
-        "question": "Final Answer 13",
-        "subheader": "description",
+        "question": "вы - береза, которая во поле стояла.",
+        "subheader": "вам доверяют секреты.",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -1065,8 +1066,8 @@
         "final": true
     },
     "114": {
-        "question": "Final Answer 14",
-        "subheader": "description",
+        "question": "вы - не дерево.",
+        "subheader": "вы виноградная лоза. без вас было бы скучно.",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -1075,8 +1076,8 @@
         "final": true
     },
     "115": {
-        "question": "Final Answer 15",
-        "subheader": "description",
+        "question": "вы - яблоня в тихом саду.",
+        "subheader": "послушайте, как течет время.",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -1085,8 +1086,8 @@
         "final": true
     },
     "116": {
-        "question": "Final Answer 16",
-        "subheader": "description",
+        "question": "вы - бонсай в саду камней.",
+        "subheader": "вам нравится тишина. вы нравитесь ей тоже.",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -1095,8 +1096,8 @@
         "final": true
     },
     "117": {
-        "question": "Final Answer 17",
-        "subheader": "description",
+        "question": "вы - древо познания.",
+        "subheader": "остерегайтесь женщин и змей",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -1105,8 +1106,8 @@
         "final": true
     },
     "118": {
-        "question": "Final Answer 18",
-        "subheader": "description",
+        "question": "вы - бук, символ мудрости.",
+        "subheader": "вас не пугают грозы. или...?",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}
@@ -1115,8 +1116,8 @@
         "final": true
     },
     "119": {
-        "question": "Final Answer 19",
-        "subheader": "description",
+        "question": "вы - дерево, из которого сделали скрипку.",
+        "subheader": "красивее только стать кораблем...",
         "delay": 0,
         "options": [
             {"text": "начать сначала", "action": "refresh"}

@@ -50,7 +50,7 @@
         "question": "Question2",
         "delay": 2000,
         "options": [
-            {"text": "Option1", "action": "+2a", "next": "3"},
+            {"text": "Option1", "action": "+2a;-1b", "next": "3"},
             {"text": "Option2", "action": "+2b", "next": "4"}
         ],
         "image": "img2.png",

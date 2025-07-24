@@ -10,7 +10,7 @@
     },
     "2": {
         "question": "Question2",
-        "delay": 2000,
+        "delay": 10000,
         "options": [
             {"text": "Option1", "action": "+2a", "next": "3"},
             {"text": "Option2", "action": "+2b", "next": "4"}
@@ -20,7 +20,7 @@
     },
     "3": {
         "question": "Question3",
-        "delay": 2000,
+        "delay": 6000,
         "options": [
             {"text": "Option1", "action": "+3a", "next": "5"},
             {"text": "Option2", "action": "+3b", "next": "6"}

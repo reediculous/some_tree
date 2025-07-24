@@ -100,7 +100,7 @@ body {
     font-weight: 400;
     letter-spacing: 0.06em;
     margin-top: auto;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
     line-height: 1.3;
     opacity: 0.93;
     padding-left: 12px;
@@ -115,6 +115,17 @@ body {
 
 .credit-item:last-child {
     margin-bottom: 0;
+}
+
+.credit-link {
+    color: #01161E;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+}
+
+.credit-link:hover {
+    opacity: 0.7;
+    text-decoration: underline;
 }
 
 /* Responsive: even smaller on mobile */

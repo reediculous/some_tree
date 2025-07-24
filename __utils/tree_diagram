@@ -1,6 +1,6 @@
 // Decision Tree
 digraph {
-	dpi=300
+	dpi=600
 	1 [label="1: тест: какое ты дерево?" shape=box]
 	2 [label="2: Question2" shape=box]
 	3 [label="3: Question3" shape=box]
@@ -301,6 +301,10 @@ digraph {
 [-1]"]
 	56 -> 74 [label="Option2
 [-4a]"]
+	57 -> 75 [label="Option1
+[-4c]"]
+	57 -> 76 [label="Option2
+[-1]"]
 	58 -> 77 [label="Option1
 [-3d]"]
 	58 -> 78 [label="Option2

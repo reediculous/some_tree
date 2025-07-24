@@ -1,5 +1,5 @@
-const SCENARIO_URL = 'scenarios/node.json';
-const SOUNDS_DIR = 'sounds/';
+const SCENARIO_URL = '/some_tree/scenarios/node.json';
+const SOUNDS_DIR = '/some_tree/sounds/';
 
 const app = document.getElementById('app');
 
@@ -140,20 +140,20 @@ function showCurrentNode() {
     let animDiv, animInterval;
     if (delayMs > 0) {
         const frames = [
-            "icons/delay_animation/delay_wait_1.png",
-            "icons/delay_animation/delay_wait_1.png",
-            "icons/delay_animation/delay_wait_1.png",
-            "icons/delay_animation/delay_wait_1.png",
-            "icons/delay_animation/delay_wait_1.png",
-            "icons/delay_animation/delay_wait_1.png",
-            "icons/delay_animation/delay_wait_1.png",
-            "icons/delay_animation/delay_wait_2.png",
-            "icons/delay_animation/delay_wait_3.png",
-            "icons/delay_animation/delay_wait_4.png",
-            "icons/delay_animation/delay_wait_5.png",
-            "icons/delay_animation/delay_wait_6.png",
-            "icons/delay_animation/delay_wait_7.png",
-            "icons/delay_animation/delay_wait_8.png",
+            "/some_tree/icons/delay_animation/delay_wait_1.png",
+            "/some_tree/icons/delay_animation/delay_wait_1.png",
+            "/some_tree/icons/delay_animation/delay_wait_1.png",
+            "/some_tree/icons/delay_animation/delay_wait_1.png",
+            "/some_tree/icons/delay_animation/delay_wait_1.png",
+            "/some_tree/icons/delay_animation/delay_wait_1.png",
+            "/some_tree/icons/delay_animation/delay_wait_1.png",
+            "/some_tree/icons/delay_animation/delay_wait_2.png",
+            "/some_tree/icons/delay_animation/delay_wait_3.png",
+            "/some_tree/icons/delay_animation/delay_wait_4.png",
+            "/some_tree/icons/delay_animation/delay_wait_5.png",
+            "/some_tree/icons/delay_animation/delay_wait_6.png",
+            "/some_tree/icons/delay_animation/delay_wait_7.png",
+            "/some_tree/icons/delay_animation/delay_wait_8.png",
         ];
 
         let currentFrame = 0;

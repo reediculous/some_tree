@@ -532,8 +532,8 @@
         "question": "Question57",
         "delay": 2000,
         "options": [
-            {"text": "Option1", "action": "-4c"},
-            {"text": "Option2", "action": "-1"}
+            {"text": "Option1", "action": "-4c", "next": "75"},
+            {"text": "Option2", "action": "-1", "next": "76"}
         ],
         "image": "img57.png",
         "final": false

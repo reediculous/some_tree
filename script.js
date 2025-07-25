@@ -154,7 +154,10 @@ function showCredits() {
 function showCurrentNode() {
     const nodeId = quizState.currentNodeId;
     const node = scenarioTree[nodeId];
+    const prevWarn = document.querySelector('.sound-warning-bottom');
+    if (prevWarn) prevWarn.remove();
     app.innerHTML = "";
+
 
     let delayMs = (typeof node.delay === "number" && node.delay > 0) ? node.delay : 0;
     let animDiv, animInterval;
@@ -290,6 +293,17 @@ function showCurrentNode() {
         if (isFinal) {
             mainContainer.appendChild(showCredits());
             app.appendChild(mainContainer);
+        }
+
+        // === SOUND WARNING ON START NODE ===
+        if (nodeId === "1") {
+            const soundWarning = document.createElement('div');
+            soundWarning.className = "sound-warning-bottom";
+            soundWarning.innerHTML = `
+                <img src="/some_tree/icons/sound_on.png" alt="sound on">
+                <span>обязательно включите звук!</span>
+            `;
+            document.body.appendChild(soundWarning);
         }
     };
 

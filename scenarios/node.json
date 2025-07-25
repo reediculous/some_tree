@@ -6,7 +6,8 @@
             {"text": "давайте исполним", "action": "+1", "next": "2"}
         ],
         "image": "img1.png",
-        "final": false
+        "final": false,
+        "start": true
     },
     "2": {
         "question": "вам хорошо сейчас?",

@@ -1,5 +1,25 @@
-const SCENARIO_URL = '/some_tree/scenarios/node.json';
-const SOUNDS_DIR = '/some_tree/sounds/';
+const SCENARIO_URL = 'scenarios/node.json';
+const SOUNDS_DIR = 'sounds/';
+
+// Preload animation frames
+const ANIMATION_FRAMES = [
+    "icons/delay_animation/delay_wait_1.png",
+    "icons/delay_animation/delay_wait_2.png",
+    "icons/delay_animation/delay_wait_3.png",
+    "icons/delay_animation/delay_wait_4.png",
+    "icons/delay_animation/delay_wait_5.png",
+    "icons/delay_animation/delay_wait_6.png",
+    "icons/delay_animation/delay_wait_7.png",
+    "icons/delay_animation/delay_wait_8.png",
+];
+
+// Preload images on startup
+const preloadedFrames = [];
+ANIMATION_FRAMES.forEach((src, index) => {
+    const img = new Image();
+    img.src = src;
+    preloadedFrames[index] = img;
+});
 
 const app = document.getElementById('app');
 
@@ -139,36 +159,28 @@ function showCurrentNode() {
     let delayMs = (typeof node.delay === "number" && node.delay > 0) ? node.delay : 0;
     let animDiv, animInterval;
     if (delayMs > 0) {
-        const frames = [
-            "/some_tree/icons/delay_animation/delay_wait_1.png",
-            "/some_tree/icons/delay_animation/delay_wait_1.png",
-            "/some_tree/icons/delay_animation/delay_wait_1.png",
-            "/some_tree/icons/delay_animation/delay_wait_1.png",
-            "/some_tree/icons/delay_animation/delay_wait_1.png",
-            "/some_tree/icons/delay_animation/delay_wait_1.png",
-            "/some_tree/icons/delay_animation/delay_wait_1.png",
-            "/some_tree/icons/delay_animation/delay_wait_2.png",
-            "/some_tree/icons/delay_animation/delay_wait_3.png",
-            "/some_tree/icons/delay_animation/delay_wait_4.png",
-            "/some_tree/icons/delay_animation/delay_wait_5.png",
-            "/some_tree/icons/delay_animation/delay_wait_6.png",
-            "/some_tree/icons/delay_animation/delay_wait_7.png",
-            "/some_tree/icons/delay_animation/delay_wait_8.png",
-        ];
-
+        // Frame sequence (index into preloadedFrames array)
+        const frameSequence = [0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7];
         let currentFrame = 0;
+
         animDiv = document.createElement('div');
         animDiv.className = 'waiting-animation';
-        const img = document.createElement('img');
-        img.src = frames[0];
 
-        animDiv.appendChild(img);
+        const imageElements = preloadedFrames.map((img, index) => {
+            const clone = img.cloneNode();
+            clone.style.display = index === frameSequence[0] ? 'block' : 'none';
+            clone.style.position = 'absolute';
+            animDiv.appendChild(clone);
+            return clone;
+        });
+
         app.appendChild(animDiv);
 
         animInterval = setInterval(() => {
-            currentFrame = (currentFrame + 1) % frames.length;
-            img.src = frames[currentFrame];
-        }, 100); // 10 frames per second = 100ms per frame
+            imageElements[frameSequence[currentFrame]].style.display = 'none';
+            currentFrame = (currentFrame + 1) % frameSequence.length;
+            imageElements[frameSequence[currentFrame]].style.display = 'block';
+        }, 100);
     }
 
     const renderEverything = () => {

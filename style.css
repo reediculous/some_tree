@@ -129,16 +129,17 @@ body {
 }
 
 .waiting-animation {
-    width: 480px;
-    height: 480px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
 }
+
 .waiting-animation img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Keeps aspect ratio, fits inside box */
+    top: 0;
+    left: 0;
 }
 
 /* Responsive: even smaller on mobile */

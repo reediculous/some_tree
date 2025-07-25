@@ -1,16 +1,16 @@
-const SCENARIO_URL = 'scenarios/node.json';
-const SOUNDS_DIR = 'sounds/';
+const SCENARIO_URL = '/some_tree/scenarios/node.json';
+const SOUNDS_DIR = '/some_tree/sounds/';
 
 // Preload animation frames
 const ANIMATION_FRAMES = [
-    "icons/delay_animation/delay_wait_1.png",
-    "icons/delay_animation/delay_wait_2.png",
-    "icons/delay_animation/delay_wait_3.png",
-    "icons/delay_animation/delay_wait_4.png",
-    "icons/delay_animation/delay_wait_5.png",
-    "icons/delay_animation/delay_wait_6.png",
-    "icons/delay_animation/delay_wait_7.png",
-    "icons/delay_animation/delay_wait_8.png",
+    "/some_tree/icons/delay_animation/delay_wait_1.png",
+    "/some_tree/icons/delay_animation/delay_wait_2.png",
+    "/some_tree/icons/delay_animation/delay_wait_3.png",
+    "/some_tree/icons/delay_animation/delay_wait_4.png",
+    "/some_tree/icons/delay_animation/delay_wait_5.png",
+    "/some_tree/icons/delay_animation/delay_wait_6.png",
+    "/some_tree/icons/delay_animation/delay_wait_7.png",
+    "/some_tree/icons/delay_animation/delay_wait_8.png",
 ];
 
 // Preload images on startup

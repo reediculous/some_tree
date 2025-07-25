@@ -204,12 +204,7 @@ function showCurrentNode() {
         }
 
         // === IMAGE ===
-        if (node.image) {
-            const img = document.createElement('img');
-            img.src = `/some_tree/images/${node.image}`;
-            img.alt = '';
-            mainContainer.appendChild(img);
-        }
+        // Temporarily removed
 
         // === QUESTION ===
         const questionEl = document.createElement('div');

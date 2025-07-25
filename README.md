@@ -1,3 +1,5 @@
+currently available only in Russian. English is coming soon.
+
 # Какое ты дерево?
 ## Описание
 

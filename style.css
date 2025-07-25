@@ -56,8 +56,8 @@ body {
     letter-spacing: 0.1em;
     font-size: 1.6em;
     font-weight: 400;
-    width: 330px;    /* Fixed width */
-    height: 70px;    /* Fixed height */
+    width: 500px;    /* Fixed width */
+    height: 80px;    /* Fixed height */
     margin: 0 auto;
     margin-bottom: 22px;
     cursor: pointer;

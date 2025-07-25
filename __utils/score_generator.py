@@ -13,7 +13,7 @@ def truncate(s, n=30):
     return (s[:n] + '...') if len(s) > n else s
 
 for node_id, node in nodes.items():
-    label = f"Question {node_id}"
+    label = f"Question {node.get('question')}"
     if node.get("final"):
         label = f"Answer {node_id[-2:].strip('0')}"
     # more customization (color, image, etc.) here
@@ -25,9 +25,9 @@ for node_id, node in nodes.items():
         continue
     for opt in node["options"]:
         next_id = opt.get("next")
-        opt_label = ""
+        opt_label = f"{opt.get('text')}"
         if "action" in opt:
-            opt_label += f"{', '.join(opt['action'].split(';'))}"
+            opt_label += f" {', '.join(opt['action'].split(';'))}"
         if next_id:
             dot.edge(node_id, next_id, label=truncate(opt_label, 40))
 

@@ -464,11 +464,11 @@
         "final": false
     },
     "50": {
-        "question": "вы счастливый человек?",
+        "question": "хотели бы вы знать, когда вам врут?",
         "delay": 4000,
         "options": [
-            {"text": "абсолютно", "action": "-3b", "next": "66"},
-            {"text": "не совсем", "action": "-1", "next": "67"}
+            {"text": "конечно", "action": "-3b", "next": "66"},
+            {"text": "не нужно такого", "action": "-1", "next": "67"}
         ],
         "image": "img50.png",
         "final": false
@@ -910,10 +910,10 @@
         "final": false
     },
     "98": {
-        "question": "представьте, что вы сейчас там.",
+        "question": "в вашей голове возможно все что угодно.",
         "delay": 4000,
         "options": [
-            {"text": "окей", "next": "117"}
+            {"text": "ух ты, и правда", "next": "117"}
         ],
         "image": "img98.png",
         "final": false

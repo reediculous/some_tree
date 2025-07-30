@@ -76,8 +76,8 @@ body {
 }
 
 .option-btn:hover, .option-btn:focus {
-    background: #cfabbb;
-    color: #CACFD6;
+    background: #d3a3b9;
+    color: #1d1d1d;
     box-shadow: 0 4px 16px 0 rgba(64, 199, 122, 0.05);
 }
 /* For final nodes: make the page take all height and push credits to bottom */
@@ -152,14 +152,14 @@ body {
     align-items: center;
     justify-content: center;
     padding: 18px 0 20px 0;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #3c7244;
     gap: 10px;
 }
 
 .sound-warning-bottom img {
-    height: 2em;   /* Adjust size as needed */
+    height: 2.4em;   /* Adjust size as needed */
     width: auto;
     display: block;
     margin-right: 8px;

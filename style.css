@@ -76,8 +76,8 @@ body {
 }
 
 .option-btn:hover, .option-btn:focus {
-    background: #d3a3b9;
-    color: #1d1d1d;
+    background: #e8aec9;
+    color: #ffffff;
     box-shadow: 0 4px 16px 0 rgba(64, 199, 122, 0.05);
 }
 /* For final nodes: make the page take all height and push credits to bottom */

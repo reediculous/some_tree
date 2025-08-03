@@ -1,0 +1,1129 @@
+[{
+    "1": {
+        "question": "test: what tree are you?",
+        "subheader": "for a toy glockenspiel, castanets, and a wah-wah tube",
+        "options": [
+            {"text": "let's perform", "action": "+1", "next": "2"}
+        ],
+        "image": "img1.png",
+        "final": false,
+        "start": true
+    },
+    "2": {
+        "question": "are you feeling good right now?",
+        "delay": 4500,
+        "options": [
+            {"text": "yes", "action": "+2a", "next": "3"},
+            {"text": "no, not really", "action": "+2b", "next": "4"}
+        ],
+        "image": "img2.png",
+        "final": false
+    },
+    "3": {
+        "question": "close your eyes and imagine a beautiful snowflake.",
+        "subheader": "how many rays does it have?",
+        "delay": 4500,
+        "options": [
+            {"text": "six or more", "action": "+3a", "next": "5"},
+            {"text": "I don't know", "action": "+3b", "next": "6"}
+        ],
+        "image": "img3.png",
+        "final": false
+    },
+    "4": {
+        "question": "do you think you know what beauty is?",
+        "delay": 4500,
+        "options": [
+            {"text": "yes", "action": "+3c", "next": "7"},
+            {"text": "no", "action": "+3d", "next": "8"}
+        ],
+        "image": "img4.png",
+        "final": false
+    },
+    "5": {
+        "question": "did the name of your first love have an A in it?",
+        "delay": 4500,
+        "options": [
+            {"text": "yes", "action": "+4along", "next": "9"},
+            {"text": "no", "action": "+4b", "next": "10"}
+        ],
+        "image": "img5.png",
+        "final": false
+    },
+    "6": {
+        "question": "think of the moon, the last time you saw it. what was it like?",
+        "delay": 4500,
+        "options": [
+            {"text": "white", "action": "+4c", "next": "11"},
+            {"text": "different", "action": "+4d", "next": "12"}
+        ],
+        "image": "img6.png",
+        "final": false
+    },
+    "7": {
+        "question": "is it objective or subjective?",
+        "delay": 4500,
+        "options": [
+            {"text": "objective", "action": "+4a", "next": "13"},
+            {"text": "subjective", "action": "+4b", "next": "14"}
+        ],
+        "image": "img7.png",
+        "final": false
+    },
+    "8": {
+        "question": "me too. let's change something in this piece.",
+        "delay": 4500,
+        "options": [
+            {"text": "let's do it", "action": "+4a", "next": "15"},
+            {"text": "no, let's keep it as it is", "action": "+4c", "next": "16"}
+        ],
+        "image": "img8.png",
+        "final": false
+    },
+    "9": {
+        "question": "turn your head and look closely at the object to your left.",
+        "delay": 4500,
+        "options": [
+            {"text": "done", "action": "+4a;-4along", "next": "17"}
+        ],
+        "image": "img9.png",
+        "final": false
+    },
+    "10": {
+        "question": "remember how an orange smells.",
+        "delay": 4500,
+        "options": [
+            {"text": "funny", "action": "+4along", "next": "18"}
+        ],
+        "image": "img10.png",
+        "final": false
+    },
+    "11": {
+        "question": "Arabic letters are divided into 'sun' and 'moon' letters. Poetic, isn't it?",
+        "delay": 4500,
+        "options": [
+            {"text": "it is poetic", "action": "+4d", "next": "19"}
+        ],
+        "image": "img11.png",
+        "final": false
+    },
+    "12": {
+        "question": "The moon can look red in two main cases: during a lunar eclipse and when it's low on the horizon.",
+        "delay": 4500,
+        "options": [
+            {"text": "thanks, I'll remember", "action": "+4c", "next": "20"}
+        ],
+        "image": "img12.png",
+        "final": false
+    },
+    "13": {
+        "question": "do you like ovals?",
+        "delay": 4500,
+        "options": [
+            {"text": "since childhood I have drawn only angles", "action": "+6a", "next": "21"},
+            {"text": "ovals are wonderful", "action": "+5c", "next": "22"}
+        ],
+        "image": "img13.png",
+        "final": false
+    },
+    "14": {
+        "question": "???",
+        "delay": 4500,
+        "options": [
+            {"text": "!!!", "action": "+5c", "next": "23"},
+            {"text": "...", "action": "+5b", "next": "24"}
+        ],
+        "image": "img14.png",
+        "final": false
+    },
+    "15": {
+        "question": "listen. do you like it?",
+        "delay": 4500,
+        "options": [
+            {"text": "yes", "action": "+6a", "next": "25"},
+            {"text": "not really", "action": "+6b", "next": "26"}
+        ],
+        "image": "img15.png",
+        "final": false
+    },
+    "16": {
+        "question": "it still has to change.",
+        "delay": 4500,
+        "options": [
+            {"text": "alright", "action": "+5c", "next": "27"},
+            {"text": "you tricked me!", "action": "+5a", "next": "28"}
+        ],
+        "image": "img16.png",
+        "final": false
+    },
+    "17": {
+        "question": "are you ready to change something?",
+        "delay": 4500,
+        "options": [
+            {"text": "yes", "action": "+5a;-3a", "next": "29"},
+            {"text": "no, but I have to", "action": "+5c", "next": "30"}
+        ],
+        "image": "img17.png",
+        "final": false
+    },
+    "18": {
+        "question": "do you have children?",
+        "delay": 4500,
+        "options": [
+            {"text": "yes", "action": "+5a;-3a", "next": "31"},
+            {"text": "no", "action": "+5c", "next": "32"}
+        ],
+        "image": "img18.png",
+        "final": false
+    },
+    "19": {
+        "question": "where would you really like to be right now?",
+        "delay": 4500,
+        "options": [
+            {"text": "where I am right now", "action": "+5b;-3b", "next": "33"},
+            {"text": "somewhere else", "action": "+5c", "next": "34"}
+        ],
+        "image": "img19.png",
+        "final": false
+    },
+    "20": {
+        "question": "do you have brothers or sisters?",
+        "delay": 4500,
+        "options": [
+            {"text": "yes", "action": "+5a;-3b", "next": "35"},
+            {"text": "no", "action": "+5b;-3b", "next": "36"}
+        ],
+        "image": "img20.png",
+        "final": false
+    },
+    "21": {
+        "question": "there aren't many angles in nature. I suspect that an angle is a purely human invention.",
+        "delay": 4500,
+        "options": [
+            {"text": "praise to the human mind", "action": "+5a;-6a", "next": "37"}
+        ],
+        "image": "img21.png",
+        "final": false
+    },
+    "22": {
+        "question": "can you imagine a piece in the shape of an oval?",
+        "delay": 4500,
+        "options": [
+            {"text": "please, no more experiments with form", "action": "+6c;-5c", "next": "38"}
+        ],
+        "image": "img22.png",
+        "final": false
+    },
+    "23": {
+        "question": "this question doesn't exist. come up with it yourself.",
+        "delay": 4500,
+        "options": [
+            {"text": "I did", "action": "+6c;-5c", "next": "39"}
+        ],
+        "image": "img23.png",
+        "final": false
+    },
+    "24": {
+        "question": "did you notice how a combination of unsounded symbols still creates the likeness of sound in your head?",
+        "delay": 4500,
+        "options": [
+            {"text": "!!!", "action": "+6b;-5b", "next": "40"}
+        ],
+        "image": "img24.png",
+        "final": false
+    },
+    "25": {
+        "question": "so you actually know what beauty is!",
+        "delay": 4500,
+        "options": [
+            {"text": "turns out I do", "action": "+5a;-6a;-3d", "next": "41"}
+        ],
+        "image": "img25.png",
+        "final": false
+    },
+    "26": {
+        "question": "me neither.",
+        "delay": 4500,
+        "options": [
+            {"text": "I understand", "action": "+5b;-6b;-3d", "next": "42"}
+        ],
+        "image": "img26.png",
+        "final": false
+    },
+    "27": {
+        "question": "and I don't regret it at all.",
+        "delay": 4500,
+        "options": [
+            {"text": "alright", "action": "+6c;-5c", "next": "43"}
+        ],
+        "image": "img27.png",
+        "final": false
+    },
+    "28": {
+        "question": "indeed!",
+        "delay": 4500,
+        "options": [
+            {"text": "don't do that again", "action": "+6c;-5a", "next": "44"}
+        ],
+        "image": "img28.png",
+        "final": false
+    },
+    "29": {
+        "question": "shall we change something else?",
+        "delay": 4500,
+        "options": [
+            {"text": "let's", "action": "+6a;-5a", "next": "45"}
+        ],
+        "image": "img29.png",
+        "final": false
+    },
+    "30": {
+        "question": "then shall we change something?",
+        "delay": 4500,
+        "options": [
+            {"text": "yep", "action": "+6c;-5c", "next": "46"}
+        ],
+        "image": "img30.png",
+        "final": false
+    },
+    "31": {
+        "question": "how wonderful!",
+        "delay": 4500,
+        "options": [
+            {"text": "truly", "action": "+6a;-5a", "next": "47"}
+        ],
+        "image": "img31.png",
+        "final": false
+    },
+    "32": {
+        "question": "but you probably have the urge to press this button.",
+        "delay": 4500,
+        "options": [
+            {"text": "press", "action": "+6c;-5c", "next": "48"}
+        ],
+        "image": "img32.png",
+        "final": false
+    },
+    "33": {
+        "question": "wonderful. focus on the sensation in your fingertips.",
+        "delay": 4500,
+        "options": [
+            {"text": "wow, I have hands", "action": "+6b;-5b", "next": "49"}
+        ],
+        "image": "img33.png",
+        "final": false
+    },
+    "34": {
+        "question": "why is that?",
+        "delay": 4500,
+        "options": [
+            {"text": "I have an answer", "action": "+6c;-5c", "next": "50"}
+        ],
+        "image": "img34.png",
+        "final": false
+    },
+    "35": {
+        "question": "you're lucky.",
+        "delay": 4500,
+        "options": [
+            {"text": "maybe so", "action": "+6a;-5a", "next": "51"}
+        ],
+        "image": "img35.png",
+        "final": false
+    },
+    "36": {
+        "question": "you're lucky.",
+        "delay": 4500,
+        "options": [
+            {"text": "in some ways, yes", "action": "+6b;-5b", "next": "52"}
+        ],
+        "image": "img36.png",
+        "final": false
+    },
+    "37": {
+        "question": "hold your breath and listen to your heart.",
+        "delay": 4500,
+        "options": [
+            {"text": "knock knock", "action": "-1", "next": "53"}
+        ],
+        "image": "img37.png",
+        "final": false
+    },
+    "38": {
+        "question": "close your eyes and sit in the dark.",
+        "delay": 4500,
+        "options": [
+            {"text": "this darkness is not real", "action": "-1", "next": "53"}
+        ],
+        "image": "img38.png",
+        "final": false
+    },
+    "39": {
+        "question": "now answer it.",
+        "delay": 4500,
+        "options": [
+            {"text": "answered", "action": "-1", "next": "54"}
+        ],
+        "image": "img39.png",
+        "final": false
+    },
+    "40": {
+        "question": "this question doesn't exist. come up with it yourself.",
+        "delay": 4500,
+        "options": [
+            {"text": "came up with one", "action": "-1", "next": "54"}
+        ],
+        "image": "img40.png",
+        "final": false
+    },
+    "41": {
+        "question": "imagine the face of a random person.",
+        "delay": 4500,
+        "options": [
+            {"text": "imagined", "action": "-6a", "next": "55"}
+        ],
+        "image": "img41.png",
+        "final": false
+    },
+    "42": {
+        "question": "too noisy...",
+        "delay": 4500,
+        "options": [
+            {"text": "let's make it quieter", "action": "-5b", "next": "56"}
+        ],
+        "image": "img42.png",
+        "final": false
+    },
+    "43": {
+        "question": "do you like day or night more?",
+        "delay": 4500,
+        "options": [
+            {"text": "day", "action": "-3d", "next": "57"},
+            {"text": "night", "action": "-2b", "next": "58"}
+        ],
+        "image": "img43.png",
+        "final": false
+    },
+    "44": {
+        "question": "think of the most beautiful place in the world",
+        "delay": 4500,
+        "options": [
+            {"text": "okay", "action": "-3d", "next": "59"}
+        ],
+        "image": "img44.png",
+        "final": false
+    },
+    "45": {
+        "question": "you removed my favorite fragment...",
+        "delay": 4500,
+        "options": [
+            {"text": "I liked it too", "action": "-1", "next": "60"},
+            {"text": "there was nothing special about it", "action": "-2a", "next": "61"}
+        ],
+        "image": "img45.png",
+        "final": false
+    },
+    "46": {
+        "question": "it's gotten quieter...",
+        "delay": 4500,
+        "options": [
+            {"text": "let's listen to it", "action": "-1", "next": "60"},
+            {"text": "let's move on", "action": "-2a", "next": "61"}
+        ],
+        "image": "img46.png",
+        "final": false
+    },
+    "47": {
+        "question": "are you a serious person?",
+        "delay": 4500,
+        "options": [
+            {"text": "I am", "action": "-4b", "next": "62"},
+            {"text": "not really", "action": "-1", "next": "63"}
+        ],
+        "image": "img47.png",
+        "final": false
+    },
+    "48": {
+        "question": "are you sure you're doing everything right?",
+        "delay": 4500,
+        "options": [
+            {"text": "yes", "action": "-2a", "next": "64"},
+            {"text": "not always", "action": "-1", "next": "65"}
+        ],
+        "image": "img48.png",
+        "final": false
+    },
+    "49": {
+        "question": "would you like to live forever?",
+        "delay": 4500,
+        "options": [
+            {"text": "yes", "action": "-3b", "next": "66"},
+            {"text": "no", "action": "-1", "next": "67"}
+        ],
+        "image": "img49.png",
+        "final": false
+    },
+    "50": {
+        "question": "would you like to know when someone is lying to you?",
+        "delay": 4500,
+        "options": [
+            {"text": "of course", "action": "-3b", "next": "66"},
+            {"text": "no need for that", "action": "-1", "next": "67"}
+        ],
+        "image": "img50.png",
+        "final": false
+    },
+    "51": {
+        "question": "choose the color you like best:",
+        "delay": 4500,
+        "options": [
+            {"text": "red", "action": "-3b", "next": "68"},
+            {"text": "turquoise", "action": "-1", "next": "69"}
+        ],
+        "image": "img51.png",
+        "final": false
+    },
+    "52": {
+        "question": "choose who you like more:",
+        "delay": 4500,
+        "options": [
+            {"text": "Bach", "action": "-3b", "next": "68"},
+            {"text": "Beethoven", "action": "-1", "next": "69"}
+        ],
+        "image": "img52.png",
+        "final": false
+    },
+    "53": {
+        "question": "maybe right now you're doing what's asked of you. why? do what you want.",
+        "delay": 4500,
+        "options": [
+            {"text": "alright", "action": "-3c", "next": "70"}
+        ],
+        "image": "img53.png",
+        "final": false
+    },
+    "54": {
+        "question": "that's the wrong answer. come up with another.",
+        "delay": 4500,
+        "options": [
+            {"text": "alright, here's another answer", "action": "-4b", "next": "71"}
+        ],
+        "image": "img54.png",
+        "final": false
+    },
+    "55": {
+        "question": "if you know who that is, think about them. If not, invent a name. Who is it?",
+        "delay": 4500,
+        "options": [
+            {"text": "I know who it is", "action": "-4a", "next": "72"}
+        ],
+        "image": "img55.png",
+        "final": false
+    },
+    "56": {
+        "question": "it's still noisy. What shall we remove?",
+        "delay": 4500,
+        "options": [
+            {"text": "rustling", "action": "-1", "next": "73"},
+            {"text": "ticking", "action": "-4a", "next": "74"}
+        ],
+        "image": "img56.png",
+        "final": false
+    },
+    "57": {
+        "question": "do you like receiving gifts?",
+        "delay": 4500,
+        "options": [
+            {"text": "yes", "action": "-4c", "next": "75"},
+            {"text": "not always", "action": "-1", "next": "76"}
+        ],
+        "image": "img57.png",
+        "final": false
+    },
+    "58": {
+        "question": "is it because you like being alone with yourself?",
+        "delay": 4500,
+        "options": [
+            {"text": "yes, that's why", "action": "-3d", "next": "77"},
+            {"text": "for another reason", "action": "-4c", "next": "78"}
+        ],
+        "image": "img58.png",
+        "final": false
+    },
+    "59": {
+        "question": "are there lots of plants there?",
+        "delay": 4500,
+        "options": [
+            {"text": "quite a few", "action": "-4c", "next": "79"},
+            {"text": "not really", "action": "-6c", "next": "80"}
+        ],
+        "image": "img59.png",
+        "final": false
+    },
+    "60": {
+        "question": "this piece develops as you wish.",
+        "delay": 4500,
+        "options": [
+            {"text": "it's true", "action": "-6a", "next": "81"},
+            {"text": "it's not true", "action": "-4a", "next": "82"}
+        ],
+        "image": "img60.png",
+        "final": false
+    },
+    "61": {
+        "question": "do you prefer listening or acting?",
+        "delay": 4500,
+        "options": [
+            {"text": "listening", "action": "-6c", "next": "83"},
+            {"text": "acting", "action": "-4a", "next": "84"}
+        ],
+        "image": "img61.png",
+        "final": false
+    },
+    "62": {
+        "question": "I can't say the same about myself.",
+        "delay": 4500,
+        "options": [
+            {"text": "I can see", "action": "-3a", "next": "85"}
+        ],
+        "image": "img62.png",
+        "final": false
+    },
+    "63": {
+        "question": "we are alike in that.",
+        "delay": 4500,
+        "options": [
+            {"text": "I feel it.", "action": "-3a", "next": "85"}
+        ],
+        "image": "img63.png",
+        "final": false
+    },
+    "64": {
+        "question": "remember a time you made a mistake.",
+        "delay": 4500,
+        "options": [
+            {"text": "I have", "action": "-3a", "next": "85"}
+        ],
+        "image": "img64.png",
+        "final": false
+    },
+    "65": {
+        "question": "remember a time when you were right.",
+        "delay": 4500,
+        "options": [
+            {"text": "I had such a case", "action": "-3a", "next": "85"}
+        ],
+        "image": "img65.png",
+        "final": false
+    },
+    "66": {
+        "question": "do you like cows?",
+        "delay": 4500,
+        "options": [
+            {"text": "yes, they're cute", "action": "-4c;-4d", "next": "86"},
+            {"text": "I don't feel anything special for cows", "action": "-1", "next": "87"}
+        ],
+        "image": "img66.png",
+        "final": false
+    },
+    "67": {
+        "question": "what if you had such a chance? really.",
+        "delay": 4500,
+        "options": [
+            {"text": "then let's do it", "action": "-3b", "next": "88"},
+            {"text": "no, still don't want it", "action": "-4c;-4b", "next": "89"}
+        ],
+        "image": "img67.png",
+        "final": false
+    },
+    "68": {
+        "question": "why is that?",
+        "delay": 4500,
+        "options": [
+            {"text": "no reason", "action": "-4c;-4d", "next": "90"},
+            {"text": "I have a story to explain it", "action": "-1", "next": "91"}
+        ],
+        "image": "img68.png",
+        "final": false
+    },
+    "69": {
+        "question": "why did you choose this answer?",
+        "delay": 4500,
+        "options": [
+            {"text": "no reason", "action": "-3b", "next": "92"},
+            {"text": "there's a reason", "action": "-4c;-4b", "next": "93"}
+        ],
+        "image": "img69.png",
+        "final": false
+    },
+    "70": {
+        "question": "do you want to finish?",
+        "delay": 4500,
+        "options": [
+            {"text": "I want to", "next": "101"}
+        ],
+        "image": "img70.png",
+        "final": false
+    },
+    "71": {
+        "question": "are your feet touching the floor right now?",
+        "delay": 4500,
+        "options": [
+            {"text": "yes, my feet are on the ground", "action": "-3c", "next": "94"},
+            {"text": "no, they're in the air", "action": "-2b", "next": "95"}
+        ],
+        "image": "img71.png",
+        "final": false
+    },
+    "72": {
+        "question": "say a few words to them in your mind.",
+        "delay": 4500,
+        "options": [
+            {"text": "said it", "next": "102"}
+        ],
+        "image": "img72.png",
+        "final": false
+    },
+    "73": {
+        "question": "now you can hear every sound.",
+        "delay": 4500,
+        "options": [
+            {"text": "let's listen", "action": "-2b", "next": "96"}
+        ],
+        "image": "img73.png",
+        "final": false
+    },
+    "74": {
+        "question": "that's better.",
+        "delay": 4500,
+        "options": [
+            {"text": "let's remove something else", "action": "-1", "next": "97"}
+        ],
+        "image": "img67.png",
+        "final": false
+    },
+    "75": {
+        "question": "the next day will bring you a gift. try not to miss it.",
+        "delay": 4500,
+        "options": [
+            {"text": "okay, got it", "next": "103"}
+        ],
+        "image": "img75.png",
+        "final": false
+    },
+    "76": {
+        "question": "I think giving gifts is much more pleasant.",
+        "delay": 4500,
+        "options": [
+            {"text": "alright, if you say so", "next": "104"}
+        ],
+        "image": "img76.png",
+        "final": false
+    },
+    "77": {
+        "question": "maybe that's what you miss.",
+        "delay": 4500,
+        "options": [
+            {"text": "maybe", "action": "-1", "next": "98"}
+        ],
+        "image": "img77.png",
+        "final": false
+    },
+    "78": {
+        "question": "think about that reason.",
+        "delay": 4500,
+        "options": [
+            {"text": "okay", "action": "-1", "next": "98"}
+        ],
+        "image": "img78.png",
+        "final": false
+    },
+    "79": {
+        "question": "imagine how they sound.",
+        "delay": 4500,
+        "options": [
+            {"text": "imagining", "action": "-1", "next": "98"}
+        ],
+        "image": "img79.png",
+        "final": false
+    },
+    "80": {
+        "question": "imagine what that place looks like at night.",
+        "delay": 4500,
+        "options": [
+            {"text": "imagining", "action": "-1", "next": "98"}
+        ],
+        "image": "img80.png",
+        "final": false
+    },
+    "81": {
+        "question": "that was a lie. click for it to enter the next pre-planned phase.",
+        "delay": 4500,
+        "options": [
+            {"text": "choice is an illusion", "action": "+4along", "next": "99"}
+        ],
+        "image": "img81.png",
+        "final": false
+    },
+    "82": {
+        "question": "you're right. I still control the process.",
+        "delay": 4500,
+        "options": [
+            {"text": "give in to control", "action": "+4along", "next": "99"}
+        ],
+        "image": "img82.png",
+        "final": false
+    },
+    "83": {
+        "question": "then listen.",
+        "delay": 4500,
+        "options": [
+            {"text": "okay", "action": "+4along", "next": "99"}
+        ],
+        "image": "img83.png",
+        "final": false
+    },
+    "84": {
+        "question": "then act.",
+        "delay": 4500,
+        "options": [
+            {"text": "acting", "action": "+4along", "next": "99"}
+        ],
+        "image": "img84.png",
+        "final": false
+    },
+    "85": {
+        "question": "do you know the joke about Mozart and the metronome?",
+        "delay": 4500,
+        "options": [
+            {"text": "what the heck is ticking?", "action": "-4along", "next": "100"}
+        ],
+        "image": "img85.png",
+        "final": false
+    },
+    "86": {
+        "question": "sometimes you have to choose",
+        "delay": 4500,
+        "options": [
+            {"text": "the only possible option.", "next": "105"}
+        ],
+        "image": "img86.png",
+        "final": false
+    },
+    "87": {
+        "question": "they feel the same about you.",
+        "delay": 4500,
+        "options": [
+            {"text": "alright, I'll live with it", "next": "106"}
+        ],
+        "image": "img87.png",
+        "final": false
+    },
+    "88": {
+        "question": "you will feel sad...",
+        "delay": 4500,
+        "options": [
+            {"text": "I know", "next": "107"}
+        ],
+        "image": "img88.png",
+        "final": false
+    },
+    "89": {
+        "question": "that's right.",
+        "delay": 4500,
+        "options": [
+            {"text": "yes", "next": "108"}
+        ],
+        "image": "img89s.png",
+        "final": false
+    },
+    "90": {
+        "question": "nothing ever happens for no reason",
+        "delay": 4500,
+        "options": [
+            {"text": "questionable statement", "next": "109"}
+        ],
+        "image": "img90.png",
+        "final": false
+    },
+    "91": {
+        "question": "recall any other story that happened to you.",
+        "delay": 4500,
+        "options": [
+            {"text": "I remember it", "next": "110"}
+        ],
+        "image": "img91.png",
+        "final": false
+    },
+    "92": {
+        "question": "then click here—for no reason at all.",
+        "delay": 4500,
+        "options": [
+            {"text": "sure, why not", "next": "111"}
+        ],
+        "image": "img92.png",
+        "final": false
+    },
+    "93": {
+        "question": "funny, we're all made up of stories. so is this piece.",
+        "delay": 4500,
+        "options": [
+            {"text": "but I just wanted to find out what tree I am...", "next": "112"}
+        ],
+        "image": "img93.png",
+        "final": false
+    },
+    "94": {
+        "question": "feel the floor under your feet.",
+        "delay": 4500,
+        "options": [
+            {"text": "I feel it", "next": "113"}
+        ],
+        "image": "img94.png",
+        "final": false
+    },
+    "95": {
+        "question": "in a way you are hanging in the air.",
+        "delay": 4500,
+        "options": [
+            {"text": "true", "next": "114"}
+        ],
+        "image": "img95.png",
+        "final": false
+    },
+    "96": {
+        "question": "let's remove something else...",
+        "delay": 4500,
+        "options": [
+            {"text": "let's do it...", "next": "115"}
+        ],
+        "image": "img96.png",
+        "final": false
+    },
+    "97": {
+        "question": "and more...",
+        "delay": 4500,
+        "options": [
+            {"text": "more?", "next": "116"}
+        ],
+        "image": "img97.png",
+        "final": false
+    },
+    "98": {
+        "question": "anything is possible in your head.",
+        "delay": 4500,
+        "options": [
+            {"text": "wow, that's true", "next": "117"}
+        ],
+        "image": "img98.png",
+        "final": false
+    },
+    "99": {
+        "question": "nevertheless, only you decide when to finish.",
+        "delay": 4500,
+        "options": [
+            {"text": "I want to finish", "next": "118"}
+        ],
+        "image": "img99.png",
+        "final": false
+    },
+    "100": {
+        "question": "listen.",
+        "delay": 4500,
+        "options": [
+            {"text": "I'm listening", "next": "119"}
+        ],
+        "image": "img100.png",
+        "final": false
+    },
+    "101": {
+        "question": "you are a tree that will one day become a book.",
+        "subheader": "a good or a bad one?",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img101.png",
+        "final": true
+    },
+    "102": {
+        "question": "you are a willow.",
+        "subheader": "every now and then, things happen beneath you. be careful.",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img102.png",
+        "final": true
+    },
+    "103": {
+        "question": "you are a sakura.",
+        "subheader": "you have excellent taste. everyone wants to see your blossoming.",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img103.png",
+        "final": true
+    },
+    "104": {
+        "question": "you're not a tree at all.",
+        "subheader": "you are something very different.",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img104.png",
+        "final": true
+    },
+    "105": {
+        "question": "you're the oak that Prince Andrei talked to.",
+        "subheader": "that was a long time ago, right?",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img105.png",
+        "final": true
+    },
+    "106": {
+        "question": "you're a poplar on a bright summer day.",
+        "subheader": "songs are dedicated to you. beware of random fire.",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img106.png",
+        "final": true
+    },
+    "107": {
+        "question": "you're a lilac bush.",
+        "subheader": "someone's modest happiness may be blooming in your branches.",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img107.png",
+        "final": true
+    },
+    "108": {
+        "question": "you're a laurel tree.",
+        "subheader": "the sacred tree of Apollo. I envy you.",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img108.png",
+        "final": true
+    },
+    "109": {
+        "question": "you're a mangrove tree.",
+        "subheader": "(yes, they exist.)",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img109.png",
+        "final": true
+    },
+    "110": {
+        "question": "you're a Christmas tree decorated with a star.",
+        "subheader": "nobody asked if you want to be the center of attention.",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img110.png",
+        "final": true
+    },
+    "111": {
+        "question": "you're the linden from Schubert's song.",
+        "subheader": "maybe someone else's words are carved into your bark. but is that so bad?",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img111.png",
+        "final": true
+    },
+    "112": {
+        "question": "you're an ash tree.",
+        "subheader": "people keep asking you questions. good thing they're over.",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img112.png",
+        "final": true
+    },
+    "113": {
+        "question": "you're the birch that stood in the field.",
+        "subheader": "people trust you with their secrets.",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img113.png",
+        "final": true
+    },
+    "114": {
+        "question": "you're not a tree.",
+        "subheader": "you're a grapevine. it would be boring without you.",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img114.png",
+        "final": true
+    },
+    "115": {
+        "question": "you're an apple tree in a quiet garden.",
+        "subheader": "listen to the flow of time.",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img115.png",
+        "final": true
+    },
+    "116": {
+        "question": "you're a bonsai in a rock garden.",
+        "subheader": "you love silence. it loves you too.",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img116.png",
+        "final": true
+    },
+    "117": {
+        "question": "you're the tree of knowledge.",
+        "subheader": "beware of women and snakes",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img117.png",
+        "final": true
+    },
+    "118": {
+        "question": "you're a beech, the symbol of wisdom.",
+        "subheader": "thunderstorms don't scare you. or do they...?",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img118.png",
+        "final": true
+    },
+    "119": {
+        "question": "you're the tree that became a violin.",
+        "subheader": "the only thing lovelier is becoming a ship...",
+        "delay": 0,
+        "options": [
+            {"text": "start over", "action": "refresh"}
+        ],
+        "image": "img119.png",
+        "final": true
+    }
+}]

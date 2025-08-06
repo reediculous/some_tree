@@ -295,7 +295,7 @@ function showCurrentNode() {
             const soundWarning = document.createElement('div');
             soundWarning.className = "sound-warning-bottom";
             soundWarning.innerHTML = `
-                <img src="icons/sound_on.png" alt="sound on">
+                <img src="/some_tree/icons/sound_on.png" alt="sound on">
                 <span>обязательно включите звук!</span>
             `;
             document.body.appendChild(soundWarning);

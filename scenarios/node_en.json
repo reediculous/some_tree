@@ -1,7 +1,7 @@
 [{
     "1": {
         "question": "test: what tree are you?",
-        "subheader": "for a toy glockenspiel, castanets, and a wah-wah tube",
+        "subheader": "for toy glockenspiel, castanets, and wah-wah tube",
         "options": [
             {"text": "let's perform", "action": "+1", "next": "2"}
         ],
@@ -102,7 +102,7 @@
         "question": "Arabic letters are divided into 'sun' and 'moon' letters. Poetic, isn't it?",
         "delay": 4500,
         "options": [
-            {"text": "it is poetic", "action": "+4d", "next": "19"}
+            {"text": "truly poetic", "action": "+4d", "next": "19"}
         ],
         "image": "img11.png",
         "final": false
@@ -958,7 +958,7 @@
     },
     "103": {
         "question": "you are a sakura.",
-        "subheader": "you have excellent taste. everyone wants to see your blossoming.",
+        "subheader": "you have excellent taste. everyone wants to see you blossom.",
         "delay": 0,
         "options": [
             {"text": "start over", "action": "refresh"}

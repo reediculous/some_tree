@@ -161,7 +161,7 @@ function showCurrentNode() {
 
     let delayMs = (typeof node.delay === "number" && node.delay > 0) ? node.delay : 0;
     let animDiv, animInterval;
-    if (delayMs > 0) {
+    if (delayMs > 0 && !node.final) {
         // Frame sequence (index into preloadedFrames array)
         const frameSequence = [0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 5, 6, 7];
         let currentFrame = 0;
